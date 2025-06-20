@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@import url(./base/reset.css);
+@import url(./font.css);
+@import url(./base/root.css);
+@import url(./base/reboot.css);
+@import url(./base/custom.css);
+@import url(./font-size.css);
+.wrapper{overflow: hidden;}
+.stop-scroll{overflow:hidden; height:100%;}
+.inner{width: calc(100% - 32rem); max-width: 1048rem; margin: 0 auto;}
+.only-web{display:block !important;}
+.only-mob{display:none !important;}
+.sec1 .inner{max-width: 1200rem;}
+header {position: absolute; width: 100%;  left: 0; top: 0; display: flex; align-items: center; justify-content: space-between; height: 100rem; padding: 0 40rem;  z-index: 10;}
+header h1{width: 128rem;}
+header h2{width: 162rem;}
+section{position: relative; padding: 120rem 0;}
+.card{position:relative; padding: 60rem; }
+.obj{position: absolute;}
+.form-box label{display: block; font-weight: 500; margin-right: 24rem;}
+.form-box .left p{color: var(--bs-tc-weak); width: 84rem;}
+.input-box{gap: 8rem;}
+.input-box input[type="text"]{display: block; width: 100%; height: 60rem; font-size: 20rem; padding: 20rem; border: none; outline: none; background-color:#ececec;}
+.input-box input::placeholder{color:#6e6e6e;}
+.btn{display: inline-block; padding: 0 45rem; color: #fff; height: 60rem; font-size: 20rem; background-color: #302c2b; text-align: center;}
+.fallback-text {  display: none;  font-size: 16rem;  color: #333;  line-height: 1.5;  padding: 1rem;  background: #f7f7f7;  border: 1px dashed #ccc;}
+/* 이미지 깨졌을 때 fallback 노출 */
+.long-txt-img:not([src]) + .fallback-text,
+.long-txt-img[src=""] + .fallback-text,
+.long-txt-img:invalid + .fallback-text {  display: block;}
+
+figure,picture{display:block; position: relative; }
+figure img, picture img{display: block; max-width: 100%;}
+figure.center, picture.center{margin-left: auto; margin-right: auto;}
+.sec1 picture{ margin-left: auto; margin-right: auto;}
+
+.sec1{padding: 170rem 0 120rem; position:  relative;  text-align: center;  background-image: linear-gradient(#eff4f8 1px, transparent 1px), linear-gradient(90deg, #eff4f8 1px, transparent 1px);    background-size: 35rem 35rem, 35rem 35rem;    background-position: -1px -1px, -1px -1px;    background-repeat: repeat;  }
+.sec1::before{ content: '';     position:absolute;    left: 50%; top: 0;transform: translateX(-50%);  background: url(../images/main_bg.png) no-repeat top center / 100% auto; width: 1920rem; height: 1354rem;}
+.main_ttl1{width: 682rem; margin-bottom: 32rem;}
+.main_ttl2{width: 947rem; margin-bottom: 40rem;}
+.main_date{width: 391rem; margin-bottom: 75rem;}
+.main_visual{margin-bottom: 80rem;}
+.main_txt_wrapper{margin-bottom: 150rem;}
+.main_txt{width: 542rem; }
+.sec1_ttl{width: 573rem; margin-bottom: 60rem;}
+.sec1 .font32{color: var(--bs-tc-clear); margin-bottom: 50rem;}
+.sec1 .font24{margin-bottom: 48rem;}
+
+.heart-icon{width: 24rem; height: 21rem; background: url(../images/heart_default.svg) no-repeat center / cover;}
+.heart-icon.active{background-image: url(../images/heart_clicked.svg);}
+
+.best-slide{width: 100%; height: 570rem;margin: 0 auto 53rem; }
+.swiper-slide .count{font-size: 26rem;  color: #232323;}
+.swiper-slide{ width: 220rem !important; height: calc(50% - 25rem) !important;}
+.swiper-slide:nth-child(even){margin-top: 50rem !important;}
+
+
+/* sec2 */
+.sec2{ background-color: #08956d;}
+.sec2_ttl{width: 156rem; margin-bottom: 80rem;}
+.sec2 .card{background-color: #fff; padding-top:70rem;}
+.sec2 .card+.card{margin-top: 60rem;}
+.sec2 .card> .obj{width: 194rem; right: 62rem; top: 0; transform: translateY(-50%);}
+.sec2 .ttl-wrap{position: relative; padding-left: 100rem; margin-bottom: 70rem;}
+.sec2 .ttl-wrap .obj{position: absolute; left: -100rem; top: 50%;transform: translateY(-50%); width: 191rem;}
+.sec2 .ttl-wrap > picture{display: inline-block; }
+/* card 1 */
+.sec2 .card1 .ttl{width: 530rem;}
+.sec2 .card1 .img{ width: 218rem; margin-top: 54rem;}
+.sec2 .card1 .gift{width: 284rem;}
+.sec2 .card1 .btn-wrap{margin-top: 24rem;}
+.sec2 .card1 .btn-wrap .btn{width: 340rem; height: 72rem; font-size: 20rem; font-weight: 500 ;}
+/* card 2 */
+.sec2 .card2 .ttl{width: 386rem;}
+.sec2 .card2 .font28{margin-bottom: 70rem;}
+.sec2 .card2 .gift{margin-bottom: 70rem;}
+.sec2 .card2 .gift .font22{margin-top: 30rem; color: var(--bs-tc-strong);}
+.sec2 .card2 .img{position: absolute; bottom: 60rem; right: 60rem; width: 282rem;}
+.sec2 .card2 .history{margin-top: 60rem; color: var(--bs-tc-strong);}
+/* sec3 */
+.sec3 {background-color: #c1e7ff; }
+.sec3 > .obj1{ width: 174rem;left: 126rem; top: -54rem;}
+.sec3 > .obj2{width: 112rem; right: 136rem; top: 210rem;}
+.sec3 > .obj3{width: 97rem; left: 240rem; bottom: 412rem;}
+.sec3 .card .clip{ width: 58rem;top: -19rem; left: 45rem;}
+.sec3 .card1{ background: url(../images/sec3_card_bg.png) no-repeat center / cover;}
+.sec3 .card1 > .obj4{width: 103rem; right: -52rem; bottom: -52rem;}
+.sec3 .card1 .note{background-color: #ececec; padding: 20rem 34rem 50rem;}
+.sec3 .card1 .note ul li{font-size: 20rem; text-align: center; font-weight: 600; padding: 16rem 0;   border-bottom: 1px solid #bcc7d0; }
+.sec3 .card1 .ttl{width: 235rem; margin-bottom: 38rem;}
+.sec3 .card1 .form-box{margin-bottom: 60rem;}
+.sec3 .card1 .ttl2{width: 115rem; margin-bottom:38rem;}
+.sec3 .card1 .left{width: 173rem;}
+.sec3 .card1 .input-box{width: calc(100% - 173rem);}
+
+.sec3 .card2{background: url(../images/sec3_card2_bg.png) no-repeat center / cover; margin-top: 80rem;}
+.sec3 .card2 .input-box input{width: 300rem;}
+.sec3 .card2 .btn-wrap{margin-top: 60rem;}
+.sec3 .card2 .btn{width: 240rem;}
+.sec3 .card2 .ttl-wrap {margin-bottom: 38rem;}
+.sec3 .card2 .ttl{width: 182rem; margin-left: 165rem;}
+.sec3 .card2 .ttl-wrap .font18 {padding-left: 10rem; line-height: 1;}
+#fileBtn {  position: relative;  width: 60rem;  height: 60rem;  background: #ececec;  border: none;  cursor: pointer;}
+#fileBtn::before,
+#fileBtn::after {  content: '';  position: absolute;  background-color: #555;}
+#fileBtn::before { width: 2rem;  height: 28rem;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);}
+#fileBtn::after {  width: 28rem;  height: 2rem;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);}
+#fileName {  display: inline-block;  width: 288rem;  line-height: 60rem;  background: #ececec;  padding-left: 22rem;  color: #6e6e6e;}
+#submitBtn {  padding: 10px 40px;  background: #222;  color: #fff;  border: none;  cursor: pointer;}
+.sec4{ background: #f4703d url(../images/sec4_bg.png) no-repeat center / 100% auto;}
+.sec4 .ttl{width: 442rem; margin-bottom: 40rem;}
+.sec4 .font28{margin-bottom: 60rem; color: #fff; font-weight: 300;}
+.sec4 .card{background-color: #fff; margin-bottom: 120rem;}
+.sec4 .card .card_ttl{margin-bottom:  24rem;}
+.sec4 .card .font24{text-align: center; font-weight: 600; color: var(--bs-tc-clear);}
+.sec4 .card .top{padding-bottom: 40rem; margin-bottom: 40rem; background-image: url(../images/dot_line.png); background-position: left bottom; background-repeat: repeat-x }
+.sec4 .card .top .card_ttl{width: 87rem;}
+.sec4 .card .bottom .card_ttl{width: 115rem;}
+.map-box {position: relative; padding-top: 50%; margin-top: 40rem;}
+.map-box > *{position: absolute; left: 0;top: 0; width: 100% !important; height: 100% !important;}
+.sec4 .font40{margin-bottom: 70rem; font-weight: 300;}
+.share .share_txt{margin-right: 60rem;}
+.share button{width: 60rem; height: 60rem;}
+.share button+button{margin-left: 30rem;}
+footer {
+  padding: 70rem 0;
+  background-color: #fff;
+  color: #303030;
+}
+.footer_ttl{margin-bottom: 24rem;}
+footer ul li {  font-size: 20rem;  line-height: 1.5; text-indent: -0.5em; padding-left: 0.5em;}
+.fc-blue {color: #003ac9;}
+/* 팝업 공통 설정 */
+.popup {display: none;  position: fixed;  top: 0;  left: 0;  width: 100%;  height: 100vh;  z-index: 100;  background: rgba(0, 0, 0, 0.8);  color: #302c2b;  box-sizing: border-box;}
+.popup .popup-inner {position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  height: 606rem;  width: calc(100% - 40rem);  max-width: 464rem;  max-height: calc(100vh - 100rem);  background: #fff;  border-radius: 24rem;}
+/* 팝업 닫기 버튼 */
+.popup .close-btn{width: 30rem ; height: 30rem; position: absolute; top: 0; 
+  left: 50%; transform: translateX(-50%);  margin: 16rem auto ; display: block;}
+.popup .close-btn::before{content: ''; width: 2rem ; height: 24rem; position:absolute; transform: translate(-50%, 0%) rotate(45deg); background-color: #5f5f5f;}
+.popup .close-btn::after{content: ''; width: 2rem ; height: 24rem; position:absolute; transform: translate(-50%, 0%) rotate(-45deg); background-color: #5f5f5f;}
+/* 팝업 바디 */
+.pop-body {width: 100%; height: 100%; padding: 70rem 10rem 30rem 30rem;  }
+.popup-box {height: 100%;  overflow-y: auto;  padding-right: 20rem;}
+.popup-box::-webkit-scrollbar {width: 4px;}
+.popup-box::-webkit-scrollbar-thumb {background: #c8c8c8;  border-radius: 2px;}
+.popup-box::-webkit-scrollbar-track {background: transparent;  border-radius: 2px;}
+
+/* 텍스트 */
+.popup .txt-box{margin-top: 20rem;}
+.popup .txt-box h4 {font-size: 20rem; }
+.popup .txt-box p {line-height: 1.375; font-size: 16rem; margin-top: 10rem;}
+/* alert  */
+#alert .popup-inner {max-width: 420rem;  height: auto;}
+#alert .popup-box {padding-right: 0;}
+#alert .pop-body {padding: 77rem 40rem 40rem;}
+#alert p {font-size: 22rem; font-weight: 600; text-align: center; }
+#alert .btn{width: 100%; font-size: 20rem;margin-top: 57rem;}
+
+@media screen and (max-width: 1024px) {
+.only-web{display:none !important;}
+.only-mob{display:block !important;}
+header { height: 60rem; padding: 0 10rem;}
+header h1{width: 80rem;}
+header h2{width: 100rem;}
+section{ padding: 60rem 0;}
+.card{ padding: 40rem 20rem; }
+.form-box label{ margin-right: 0rem;}
+.form-box .left p{ width: auto;}
+.input-box{gap: 12rem;}
+.input-box input[type="text"]{ height: 46rem; font-size: 16rem; padding: 20rem; border: none; outline: none; background-color:#ececec;}
+.btn{display: inline-block; padding: 0 38rem; height: 46rem; font-size: 20rem; background-color: #302c2b; text-align: center;}
+.fallback-text {  display: none;  font-size: 16rem;  color: #333;  line-height: 1.5;  padding: 1rem;  background: #f7f7f7;  border: 1px dashed #ccc;}
+/* 이미지 깨졌을 때 fallback 노출 */
+.long-txt-img:not([src]) + .fallback-text,
+.long-txt-img[src=""] + .fallback-text,
+.long-txt-img:invalid + .fallback-text {  display: block;}
+
+
+.sec1{padding: 90rem 0 60rem;}
+.sec1::before{top: 230rem; background-image: url(../images/main_bg_mo.png) ; width: 100%; height: 899rem;}
+.main_ttl1{margin-bottom: 19rem;}
+.main_ttl2{margin-bottom: 30rem;}
+.main_date{margin-bottom: 48rem;}
+.main_visual{width: calc(100% + 32rem); margin-left: -16rem; padding: 0 4rem; margin-bottom: 36rem;}
+.main_txt_wrapper{margin-bottom: 300rem;}
+.sec1_ttl{margin-bottom: 30rem;}
+.sec1 .font32{margin-bottom: 24rem;}
+
+/* .heart{display: flex; align-items: center; gap: 12rem;} */
+.heart-icon{width: 20rem; height: 18rem;}
+.best-slide{height: auto;margin: 0 auto 36rem; }
+.swiper-slide .count{font-size: 20rem;}
+.swiper-slide{ width: 156rem !important; height: auto;}
+.swiper-slide:nth-child(even){margin-top: 0 !important;}
+
+
+/* sec2 */
+.sec2_ttl{margin-bottom: 80rem;}
+.sec2 .card{background-color: #fff; padding-top:70rem;}
+.sec2 .card+.sec2 .card{margin-top: 60rem;}
+.sec2 .card> .obj{right: 62rem; top: 0; transform: translateY(-50%);}
+.sec2 .ttl-wrap{position: relative; padding-left: 100rem; margin-bottom: 70rem;}
+.sec2 .ttl-wrap .obj{position: absolute; left: -100rem; top: 50%;transform: translateY(-50%);}
+
+
+.sec2_card1_img{margin-top: 54rem;}
+.sec2 .card .btn-wrap{margin-top: 24rem;}
+.sec2 .card2 .font28{margin-bottom: 70rem;}
+.sec2 .card2 .gift{margin-bottom: 70rem;}
+.sec2 .card2 .img{position: absolute; bottom: 60rem; right: 60rem;}
+
+/* sec3 */
+.sec3 {background-color: #c1e7ff; }
+.sec3 > .obj1{left: 126rem; top: -54rem;}
+.sec3 > .obj2{right: 136rem; top: 210rem;}
+.sec3 > .obj3{left: 240rem; bottom: 412rem;}
+.sec3 .card .clip{top: -19rem; left: 45rem;}
+.sec3 .card1{ background: url(../images/sec3_card_bg.png) no-repeat center / cover;}
+.sec3 .card1 > .obj4{right: -52rem; bottom: -52rem;}
+.sec3 .card1 .note{background-color: #ececec; padding: 20rem 34rem 50rem;}
+.sec3 .card1 .note ul li{font-size: 20rem; text-align: center; font-weight: 600; padding: 16rem 0;   border-bottom: 1px solid #bcc7d0; }
+.sec3 .card1 .ttl{margin-bottom: 38rem;}
+.sec3 .card1 .ttl2{}
+.sec3 .card1 .left{width: 173rem;}
+.sec3 .card1 .input-box{width: calc(100% - 173rem);}
+
+.sec3 .card2{background: url(../images/sec3_card2_bg.png) no-repeat center / cover; margin-top: 80rem;}
+.sec3 .card2 .input-box input{width: 300rem;}
+.sec3 .card2 .btn-wrap{margin-top: 60rem;}
+.sec3 .card2 .btn{width: 240rem;}
+.sec3 .card2 .ttl-wrap {margin-bottom: 38rem;}
+.sec3 .card2_ttl {padding-left: 140rem;}
+.sec3 .card2_ttl2 {padding-left: 10rem;}
+#fileBtn {  position: relative;  width: 60rem;  height: 60rem;  background: #ececec;  border: none;  cursor: pointer;}
+#fileBtn::before,
+#fileBtn::after {  content: '';  position: absolute;  background-color: #555;}
+#fileBtn::before { width: 2rem;  height: 28rem;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);}
+#fileBtn::after {  width: 28rem;  height: 2rem;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);}
+#fileName {  display: inline-block;  width: 288rem;  line-height: 60rem;  background: #ececec;  padding-left: 22rem;  color: #6e6e6e;}
+#submitBtn {  padding: 10px 40px;  background: #222;  color: #fff;  border: none;  cursor: pointer;}
+.sec4{ background: #f4703d url(../images/sec4_bg.png) no-repeat center / 100% auto;}
+.sec4 .ttl{margin-bottom: 20rem;}
+.sec4 .font28{margin-bottom: 30rem;}
+.sec4 .card{margin-bottom: 40rem;}
+.sec4 .card .card_ttl{margin-bottom:  15rem;}
+.sec4 .card .top{padding-bottom: 20rem; margin-bottom: 20rem; background-image: url(../images/dot_line.png); background-position: left bottom; background-repeat: repeat-x }
+.map-box {padding-top: 69.44445%; margin-top: 19rem;}
+.sec4 .font40{margin-bottom: 35rem;}
+.share .share_txt{margin-right: 50rem;}
+.share button{width: 56rem; height: 56rem;}
+.share button+button{margin-left: 18rem;}
+footer {  padding: 60rem 0;}
+.footer_ttl{margin-bottom: 10rem;}
+footer ul li {  font-size: 16rem;  }
+/* 팝업 공통 설정 */
+.popup {display: none;  position: fixed;  top: 0;  left: 0;  width: 100%;  height: 100vh;  z-index: 100;  background: rgba(0, 0, 0, 0.8);  color: #302c2b;  box-sizing: border-box;}
+.popup .popup-inner {position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  height: 606rem;  width: calc(100% - 40rem);  max-width: 464rem;  max-height: calc(100vh - 100rem);  background: #fff;  border-radius: 24rem;}
+/* 팝업 닫기 버튼 */
+.popup .close-btn{width: 30rem ; height: 30rem; position: absolute; top: 0; 
+  left: 50%; transform: translateX(-50%);  margin: 16rem auto ; display: block;}
+.popup .close-btn::before{content: ''; width: 2rem ; height: 24rem; position:absolute; transform: translate(-50%, 0%) rotate(45deg); background-color: #5f5f5f;}
+.popup .close-btn::after{content: ''; width: 2rem ; height: 24rem; position:absolute; transform: translate(-50%, 0%) rotate(-45deg); background-color: #5f5f5f;}
+/* 팝업 바디 */
+.pop-body {width: 100%; height: 100%; padding: 70rem 10rem 30rem 30rem;  }
+.popup-box {height: 100%;  overflow-y: auto;  padding-right: 20rem;}
+.popup-box::-webkit-scrollbar {width: 4px;}
+.popup-box::-webkit-scrollbar-thumb {background: #c8c8c8;  border-radius: 2px;}
+.popup-box::-webkit-scrollbar-track {background: transparent;  border-radius: 2px;}
+
+/* 텍스트 */
+.popup .txt-box{margin-top: 20rem;}
+.popup .txt-box h4 {font-size: 20rem; }
+.popup .txt-box p {line-height: 1.375; font-size: 16rem; margin-top: 10rem;}
+/* alert  */
+#alert .popup-inner {max-width: 420rem;  height: auto;}
+#alert .popup-box {padding-right: 0;}
+#alert .pop-body {padding: 77rem 40rem 40rem;}
+#alert p {font-size: 22rem; font-weight: 600; text-align: center; }
+#alert .btn{width: 100%; font-size: 20rem;margin-top: 57rem;}
+
+}

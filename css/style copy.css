@@ -1,0 +1,1040 @@
+@charset "UTF-8";
+@import url(./base/reset.css);
+@import url(./font.css);
+@import url(./base/root.css);
+@import url(./base/reboot.css);
+@import url(./base/custom.css);
+@import url(./font-size.css);
+
+.stop-scroll{overflow:hidden; height:100%;}
+
+.only-web{display:block !important;}
+.only-mob{display:none !important;}
+
+.ssam-event {position: relative;}
+.ssam-event h1 {position: absolute; top: 30rem; left: 40rem; width: 149rem; height: 40rem; z-index: 10;}
+.ssam-event h2 {position: absolute; top: 33rem; right: 40rem; width: 178rem; height: 34rem; z-index: 10;}
+
+.ssam-event .sec.one {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden; z-index:4; transition:height 0.7s ease;}
+.ssam-event .sec.one.active{height:0;}
+.ssam-event .sec.one .sec-wrap{position:relative; width:100%; height:100vh;}
+.ssam-event .sec.one .sec-wrap .replay-btn{display:none; position:absolute; bottom:24rem; right:24rem;}
+.ssam-event .sec.one .sec-wrap .replay-btn span{padding-left:24rem; font-size:16rem; font-weight:600; color:#fff; background:url("../images/icon-replay.svg") no-repeat left center;}
+.ssam-event .sec.one:has(.star-pack2.active) .sec-wrap .replay-btn{display:block;}
+.ssam-event .sec.one .background-pack {position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden;}
+.ssam-event .sec.one .background-pack .one {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('../images/ssam-s1-bg.jpg') no-repeat center center; background-size: cover; overflow: hidden;}
+.ssam-event .sec.one .background-pack .two {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #003AC9; opacity: 0;}
+.ssam-event .sec.one .background-pack .thr {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #FF6436; opacity: 0;}
+
+.ssam-event .sec.one .obj-pack {position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden;}
+.ssam-event .sec.one .obj-pack .flower {position: absolute; top: 351rem; left: 55rem; width: 317rem; height: 236rem; opacity:0; transition:top 0.7s ease, left 0.7s ease, opacity 0.7s ease;}
+.ssam-event .sec.one .obj-pack .flower {position: absolute; top: 351rem; left: 55rem; width: 317rem; height: 236rem; opacity:0; transition:top 0.7s ease, left 0.7s ease, opacity 0.7s ease;}
+.ssam-event .sec.one .obj-pack .flower .thr {position: absolute; bottom: 0; left: 0; width: 79rem; height: 88rem;}
+.ssam-event .sec.one .obj-pack .flower .two {position: absolute; top: 43rem; left: 97rem; width: 211rem; height: 108rem;}
+.ssam-event .sec.one .obj-pack .flower .one {position: absolute; top: 0; right: 0; width: 42rem; height: 42rem;}
+.ssam-event .sec.one .obj-pack .star-pack1 {position: absolute; top: -50rem; right: -80rem; width: 517rem; height: 691rem; opacity:0; transition:top 0.7s ease, right 0.7s ease, opacity 0.7s ease;}
+.ssam-event .sec.one .obj-pack .star-pack1 .one {position: absolute; top: 0; right: 0; width: 579rem; height: 690rem;}
+.ssam-event .sec.one .obj-pack .star-pack1 .two {position: absolute; top: 200rem; right: 317rem; width: 55rem; height: 55rem;}
+.ssam-event .sec.one .obj-pack .star-pack1 .thr {position: absolute; top: 679rem; right: 196rem; width: 182rem; height: 182rem;}
+.ssam-event .sec.one .obj-pack .star4 {position: absolute; top: 664rem; left: 284rem; width: 48rem; height: 45rem; opacity:0;}
+.ssam-event .sec.one .obj-pack .star5 {position: absolute; top: 675rem; left: 12rem; width: 93rem; height: 93rem; opacity:0;}
+.ssam-event .sec.one .obj-pack .star-pack2 {position: absolute; top: 300rem; left: 56rem; width: 345rem; height: 344rem; opacity:0; transition:top 0.7s ease, left 0.7s ease, opacity 0.7s ease;}
+.ssam-event .sec.one .obj-pack .star-pack2 .one {position: absolute; top: 25rem; left: 0; width: 109rem; height: 102rem; transform:rotate(80deg); transition:transform 0.7s ease;}
+.ssam-event .sec.one .obj-pack .star-pack1 {position: absolute; top: -50rem; right: -80rem; width: 517rem; height: 691rem; opacity:0; transition:top 0.7s ease, right 0.7s ease, opacity 0.7s ease;}
+.ssam-event .sec.one .obj-pack .star-pack1 .one {position: absolute; top: 0; right: 0; width: 579rem; height: 690rem;}
+.ssam-event .sec.one .obj-pack .star-pack1 .two {position: absolute; top: 200rem; right: 317rem; width: 55rem; height: 55rem;}
+.ssam-event .sec.one .obj-pack .star-pack1 .thr {position: absolute; top: 679rem; right: 196rem; width: 182rem; height: 182rem;}
+.ssam-event .sec.one .obj-pack .star4 {position: absolute; top: 664rem; left: 284rem; width: 48rem; height: 45rem; opacity:0;}
+.ssam-event .sec.one .obj-pack .star5 {position: absolute; top: 675rem; left: 12rem; width: 93rem; height: 93rem; opacity:0;}
+.ssam-event .sec.one .obj-pack .star-pack2 {position: absolute; top: 300rem; left: 56rem; width: 345rem; height: 344rem; opacity:0; transition:top 0.7s ease, left 0.7s ease, opacity 0.7s ease;}
+.ssam-event .sec.one .obj-pack .star-pack2 .one {position: absolute; top: 25rem; left: 0; width: 109rem; height: 102rem; transform:rotate(80deg); transition:transform 0.7s ease;}
+.ssam-event .sec.one .obj-pack .star-pack2 .two {position: absolute; top: 86rem; left: 193rem; width: 36rem; height: 41rem;}
+.ssam-event .sec.one .obj-pack .star-pack2 .thr {position: absolute; top: 0; right: 0; width: 61rem; height: 69rem;}
+.ssam-event .sec.one .obj-pack .star-pack2 .fou {position: absolute; top: 128rem; left: 133rem; width: 211rem; height: 108rem;}
+.ssam-event .sec.one .obj-pack .flower.active{top:411rem; left: -5rem; opacity:1;}
+.ssam-event .sec.one .obj-pack .star-pack1.active{top:0; right:0; opacity:1;}
+.ssam-event .sec.one .obj-pack .star-pack2.active{top: 250rem; left: -16rem; opacity:1;}
+.ssam-event .sec.one .obj-pack .star-pack2.active .one{transform:rotate(0deg);}
+
+.ssam-event .sec.one .obj-pack .flower.active{top:411rem; left: -5rem; opacity:1;}
+.ssam-event .sec.one .obj-pack .star-pack1.active{top:0; right:0; opacity:1;}
+.ssam-event .sec.one .obj-pack .star-pack2.active{top: 250rem; left: -16rem; opacity:1;}
+.ssam-event .sec.one .obj-pack .star-pack2.active .one{transform:rotate(0deg);}
+
+
+.ssam-event .sec.one .txt-pack {position: absolute; top: 40rem; left: 50%; transform: translate(-50%, 0); width: 1080rem; height: 374rem;}
+.ssam-event .sec.one .txt-pack .scene1 {position: absolute; top: 0; left: 0; width: 1080rem; height: 374rem;}
+.ssam-event .sec.one .txt-pack .scene1 .one {position: absolute; top: 0; left: 0; width: 329rem; height: 342rem; transform:scale(0.5); opacity:0;}
+.ssam-event .sec.one .txt-pack .scene1 .two {position: absolute; top: 0; right: 0; width: 460rem; height: 344rem; transform:scale(0.5); opacity:0;}
+.ssam-event .sec.one .txt-pack .scene2 {position: absolute; top: 0; left: 0; width: 1080rem; height: 374rem;}
+.ssam-event .sec.one .txt-pack .scene2 .one {position: absolute; top: 0; left: 0; width: 329rem; height: 342rem; transform:scale(0.5); opacity:0;}
+.ssam-event .sec.one .txt-pack .scene2 .two {position: absolute; top: 0; left: 390rem; width: 187rem; height: 309rem; transform:scale(0.5); opacity:0;}
+.ssam-event .sec.one .txt-pack .scene2 .thr {position: absolute; top: 0; right: 0; width: 460rem; height: 344rem; transform:scale(0.5); opacity:0;}
+.ssam-event .sec.one .txt-pack .scene3 {position: absolute; top: 0; left: 0; width: 1080rem; height: 374rem;}
+.ssam-event .sec.one .txt-pack .scene3 .one {position: absolute; top: 0; left: 0; width: 329rem; height: 342rem; opacity:0; transform:scale(0.5);}
+.ssam-event .sec.one .txt-pack .scene3 .two {position: absolute; top: 110rem; left: 380rem; width: 187rem; height: 309rem; opacity:0; transform:scale(0.5);}
+.ssam-event .sec.one .txt-pack .scene3 .thr {position: absolute; top: -40rem; right: -20rem; width: 506rem; height: 374rem; opacity:0; transform:scale(0.5);}
+/* .ssam-event .sec.one .txt-pack .scene2.active {opacity:1; transform:scale(1);}
+.ssam-event .sec.one .txt-pack .scene3.active {opacity:1; transform:scale(1);}
+.ssam-event .sec.one .txt-pack .scene2.active {opacity:1; transform:scale(1);}
+.ssam-event .sec.one .txt-pack .scene3.active {opacity:1; transform:scale(1);} */
+
+.ssam-event .sec.one .people-pack {position: absolute; bottom: 0rem; left: 50%; transform: translate(-50%, 0); width: 1080rem; height: 980rem;}
+.ssam-event .sec.one .people-pack .scene1 {position: absolute; bottom: 0; left: 50%; width: 776rem; height: 914rem; transform-origin:bottom; transform:translate(-47%, 0);}
+.ssam-event .sec.one .people-pack .scene1 .one {position: absolute; bottom: 0; left: -370rem; width: 544rem; height: 445rem; opacity:0; transform:scale(0.5); transform-origin:bottom; transition:opacity 0.7s ease, transform 0.7s ease;}
+.ssam-event .sec.one .people-pack .scene1 .two {position: absolute; bottom: 0; right: -290rem; width: 545rem; height: 571rem; opacity:0; transform:scale(0.5); transform-origin:bottom; transition:opacity 0.7s ease, transform 0.7s ease;}
+.ssam-event .sec.one .people-pack .scene1 .thr {position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0) scale(0.5); width: 776rem; height: 914rem; opacity:0; transform-origin:bottom; transition:opacity 0.7s ease, transform 0.7s ease;}
+.ssam-event .sec.one .people-pack .scene2 {position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); width: 776rem; height: 914rem;}
+.ssam-event .sec.one .people-pack .scene2 .one {position: absolute; bottom: 0; left: -310rem; width: 531rem; height: 639rem; opacity:0; transform:scale(0.5); transform-origin:bottom; transition:opacity 0.7s ease, transform 0.7s ease;}
+.ssam-event .sec.one .people-pack .scene2 .two {position: absolute; bottom: -30rem; left: 190rem; width: 788rem; height: 811rem; opacity:0; transform:scale(0.5); transform-origin:bottom; transition:opacity 0.7s ease, transform 0.7s ease;}
+.ssam-event .sec.one .people-pack .scene3 {position: absolute; bottom: 0; left: 50%; width: 776rem; height: 914rem; transform:translate(-50%, 0);}
+.ssam-event .sec.one .people-pack .scene3 .one {position: absolute; bottom: 0; right: -255rem; width: 557rem; height: 551rem; opacity:0; transform-origin:bottom; transform:scale(0.5); transition:opacity 0.7s ease, transform 0.7s ease;}
+.ssam-event .sec.one .people-pack .scene3 .two {position: absolute; bottom: -18rem; left: -247rem; width: 865rem; height: 833rem; opacity:0; transform-origin:bottom; transform:scale(0.5); transition:opacity 0.7s ease, transform 0.7s ease;}
+.ssam-event .sec.one .people-pack .scene1.active .one {transform:scale(1); opacity:1; transition-delay:0.3s;}
+.ssam-event .sec.one .people-pack .scene1.active .two {transform:scale(1); opacity:1; transition-delay:0.2s;}
+.ssam-event .sec.one .people-pack .scene1.active .thr {transform:translate(-50%, 0) scale(1); opacity:1; transition-delay:0.1s;}
+.ssam-event .sec.one .people-pack .scene2.active .one {transform:scale(1); opacity:1; transition-delay:0.2s;}
+.ssam-event .sec.one .people-pack .scene2.active .two {transform:scale(1); opacity:1; transition-delay:0.3s;}
+.ssam-event .sec.one .people-pack .scene3.active .one {transform:scale(1); opacity:1; transition-delay:0.2s;}
+.ssam-event .sec.one .people-pack .scene3.active .two {transform:scale(1); opacity:1; transition-delay:0.3s;}
+
+
+.ssam-event .sec.one .copy-pack {position: absolute; bottom: 40rem; left: 50%; transform: translate(-50%, 0); width: 586rem; height: 228rem;}
+.ssam-event .sec.one .copy-pack > p {position: absolute; top: 0; left: 0; width: 586rem; height: 228rem;}
+.ssam-event .sec.one .copy-pack > p > span{z-index:1;}
+.ssam-event .sec.one .copy-pack > p > span:nth-child(1) {overflow:hidden; display: block; position: relative;}
+.ssam-event .sec.one .copy-pack > p > span:nth-child(2) {overflow:hidden; display: block; position: relative; width: 556rem; height: 100rem; margin-top: 16rem;}
+.ssam-event .sec.one .copy-pack > p > span:nth-child(1) > img {width: 577rem; height: 107rem; transition:all 0.7s ease;}
+.ssam-event .sec.one .copy-pack > p > span:nth-child(2) > img {width: 556rem; height: 100rem; transition:all 0.7s ease;}
+.ssam-event .sec.one .copy-pack .one{opacity:1; transition:opacity 0.7s ease;}
+.ssam-event .sec.one .copy-pack .one > span:nth-child(1) > img {transform:translateY(120%); transition:all 0.7s ease;}
+.ssam-event .sec.one .copy-pack .one > span:nth-child(2) > img {transform:translateY(120%); transition:all 0.7s ease;}
+.ssam-event .sec.one .copy-pack .two{opacity:0; transition:all 0.7s ease;}
+.ssam-event .sec.one .copy-pack .two:after{display:block; content:""; position:absolute; bottom:-40rem; left:50%; transform:translateX(-50%); width:100vw; height:533rem; background: linear-gradient(to bottom,rgba(0,58,201,0) 0%, rgba(0,58,201,0.4) 100%);}
+.ssam-event .sec.one .copy-pack .thr{opacity:0; transition:opacity 0.7s ease;}
+.ssam-event .sec.one .copy-pack .thr:after{display:block; content:""; position:absolute; bottom:-40rem; left:50%; transform:translateX(-50%); width:100vw; height:533rem; background: linear-gradient(to bottom,rgba(255,100,54,0) 0%, rgba(255,100,54,0.4) 100%);}
+.ssam-event .sec.one .copy-pack .one.active span img{transform:translateY(0%); transition-delay:0.1s;}
+.ssam-event .sec.one .copy-pack .one.hide{opacity:0;}
+.ssam-event .sec.one .copy-pack .two.active{opacity:1;}
+.ssam-event .sec.one .copy-pack .thr.active{opacity:1;}
+
+
+.ssam-event .contents{position:absolute; top:0; left:0; width:100%; height:100vh; z-index:3;}
+.ssam-event .contents > h3{position:absolute; top:48rem; left:50%; transform:translate(-50%, 0); width: 53rem; height: 28rem; z-index:1;}
+.ssam-event .sec.two {position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background: #000; opacity:1; z-index:1; transition:opacity 0.7s ease;}
+.ssam-event .sec.two .copy {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 804rem; height: 266rem;}
+.ssam-event .sec.two .copy .main {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 804rem; height: 268rem;}
+.ssam-event .sec.two .copy .main span{display:flex !important; align-items: center; justify-content: center; overflow:hidden; position:relative; width:100%; height:133rem; text-align:center;}
+.ssam-event .sec.two .copy .main span.only-mob{display:none !important;}
+.ssam-event .sec.two .copy .main span img{transform:translateY(120%); transition:all 0.8s ease;}
+.ssam-event .sec.two .copy .main span:nth-child(1) img{width:794rem;}
+.ssam-event .sec.two .copy .main span:nth-child(2) img{width:580rem;}
+.ssam-event .sec.two .copy h3{display:none;}
+.ssam-event .sec.two .copy .unit1 {position: absolute; top: -38rem; left: 181rem; width: 80rem; height: 54rem; opacity:0; transition:all 0.8s ease;}
+.ssam-event .sec.two .copy .unit2 {position: absolute; top: 48%; left: 60%; transform: translate(-50%, -50%); width: 48rem; height: 43rem; opacity:0; transition:all 0.8s ease;}
+.ssam-event .sec.two .copy .unit3 {position: absolute; top: 105rem; right: 77rem; width: 96rem; height: 95rem; opacity:0; transition:all 0.8s ease;}
+.ssam-event .sec.two .copy .unit4 {position: absolute; bottom: -85rem; left: 237rem; width: 80rem; height: 80rem; opacity:0; transition:all 0.8s ease;}
+.ssam-event .sec.two .txt-wrap > p span{position:relative;}
+.ssam-event .sec.two .txt-wrap > p span:after{display:block; content:""; position:absolute; top:0; right:0; width:100%; height:100%; background:#000; transition:width 0.8s ease;}
+.ssam-event .sec.two .txt1 {position: absolute; top: 160rem; left: 580rem;}
+.ssam-event .sec.two .txt1 span{display:inline-block; padding: 16rem 24rem; background: #686CFF; border-radius: 8rem; color: #fff; font-size: 20rem; font-weight: 700;}
+.ssam-event .sec.two .txt2 {position: absolute; top: 242rem; right: 329rem;}
+.ssam-event .sec.two .txt2 span{display: inline-block; padding: 16rem 24rem; background: #CCF23B; border-radius: 8rem; color: #1A191B; font-size: 20rem; font-weight: 700;}
+.ssam-event .sec.two .txt3 {position: absolute; top: 259rem; left: 108rem;}
+.ssam-event .sec.two .txt3 span{display:inline-block; padding: 16rem 24rem; background: #03C3EB; border-radius: 8rem; color: #fff; font-size: 20rem; font-weight: 700;}
+.ssam-event .sec.two .txt4 {position: absolute; bottom: 200rem; left: 314rem;}
+.ssam-event .sec.two .txt4 span{display: inline-block; padding: 16rem 24rem; background: #F8F92A; border-radius: 8rem; color: #E35925; font-size: 20rem; font-weight: 700;}
+.ssam-event .sec.two .txt5 {position: absolute; bottom: 165rem; right: 423rem;}
+.ssam-event .sec.two .txt5 span{display: inline-block; padding: 16rem 24rem; background: #FE6A00; border-radius: 8rem; color: #fff; font-size: 20rem; font-weight: 700;}
+.ssam-event .sec.two.active .copy .main span img{transform:translateY(0%);}
+.ssam-event .sec.two.active .copy .main span:nth-child(2) img{transition-delay:0.1s}
+.ssam-event .sec.two.active .copy .unit1 {top: -18rem; left: 141rem; opacity:1;}
+.ssam-event .sec.two.active .copy .unit2 {left: 50%; opacity:1;}
+.ssam-event .sec.two.active .copy .unit3 {right: 37rem; opacity:1; transition-delay:0.1s}
+.ssam-event .sec.two.active .copy .unit4 {bottom: -45rem; left: 277rem; opacity:1; transition-delay:0.1s}
+.ssam-event .sec.two.active .txt-wrap > p span:after{width:0; transition-delay:0.7s;}
+.ssam-event .sec.two.hide{opacity:0;}
+
+.ssam-event .sec.thr {position: relative; width: 100%; height: 100vh; background: #1420A6; overflow: hidden;}
+.ssam-event .sec.thr .copy {position: absolute; top: 280rem; left: 50%; transform: translate(-50%, 0); width: 833rem; height: 232rem;}
+.ssam-event .sec.thr .copy span{display:flex; align-items: center; justify-content: center; overflow:hidden; position:relative; width:100%; height:116rem; text-align:center;}
+.ssam-event .sec.thr .copy span img{transform:translateY(120%); transition:all 0.8s ease;}
+.ssam-event .sec.thr .copy span:nth-child(2) img{width:398rem; height:99rem;}
+.ssam-event .sec.thr .copy span:nth-child(3) img{width:826rem; height:100rem;}
+.ssam-event .sec.thr .unit1 {position: absolute; top: 251rem; left: 262rem; width: 200rem; height: 117rem; opacity:0; transform:scale(0.5); transition:all 0.7s ease;}
+.ssam-event .sec.thr .unit2 {position: absolute; top: 604rem; left: 192rem; width: 80rem; height: 64rem; opacity:0; transform:scale(0.5); transition:all 0.7s ease;}
+.ssam-event .sec.thr .unit3 {position: absolute; top: 629rem; left: 100rem; width: 80rem; height: 80rem; opacity:0; transform:scale(0.5); transition:all 0.7s ease;}
+.ssam-event .sec.thr .unit4 {position: absolute; top: 438rem; right: 505rem; width: 80rem; height: 54rem; opacity:0; transform:scale(0.5); transition:all 0.7s ease;}
+.ssam-event .sec.thr .unit5 {position: absolute; top: 405rem; right: 454rem; width: 33rem; height: 33rem; opacity:0; transform:scale(0.5); transition:all 0.7s ease;}
+.ssam-event .sec.thr .unit6 {position: absolute; bottom: -40rem; left: 470rem; width: 135rem; height: 92rem; opacity:0; transform:scale(0.5); transition:all 0.7s ease;}
+.ssam-event .sec.thr .unit7 {position: absolute; bottom: 272rem; right: 530rem; width: 80rem; height: 69rem; opacity:0; transform:scale(0.5); transition:all 0.7s ease;}
+.ssam-event .sec.thr .unit8 {position: absolute; top: 490rem; right: -61rem; width: 480rem; height: 282rem; opacity:0; transform:scale(0.5); transition:all 0.7s ease;}
+.ssam-event .sec.thr .unit9 {position: absolute; bottom: -60rem; right: 280rem; width: 80rem; height: 83rem; opacity:0; transform:scale(0.5); transition:all 0.7s ease;}
+.ssam-event .sec.thr .infi-txt {overflow:hidden; position: absolute; top: 672rem; left: 50%; transform: translate(-50%, 0); width: 680rem; height: 360rem; opacity:0; transition:top 1s ease, opacity 1s ease;}
+.ssam-event .sec.thr .infi-txt .cover {position: absolute; top: 0; left: 0; width: 680rem; height: 360rem; z-index:1;}
+.ssam-event .sec.thr .infi-txt li {display: flex; justify-content: center; align-items: center; margin: 4rem 0; height:auto;}
+.ssam-event .sec.thr .infi-txt li .txt {color: #fff; font-size: 28rem; line-height:200%; margin-left: 12rem; font-weight:700}
+.ssam-event .sec.thr .infi-txt li.fir .icon {width: 42rem; height: 48rem; transform:rotate(60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr .infi-txt li.sec .icon {width: 44rem; height: 48rem; transform:rotate(-60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr .infi-txt li.thr .icon {width: 44rem; height: 44rem; transform:rotate(60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr .infi-txt li.fou .icon {width: 55rem; height: 48rem; transform:rotate(-60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr .infi-txt li.fiv .icon {width: 61rem; height: 44rem; transform:rotate(60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr .infi-txt li.six .icon {width: 70rem; height: 44rem; transform:rotate(-60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr .infi-txt li.sev .icon {width: 60rem; height: 48rem; transform:rotate(60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr .infi-txt li.eig .icon {width: 43rem; height: 52rem; transform:rotate(-60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr .infi-txt li.nin .icon {width: 28rem; height: 48rem; transform:rotate(60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr .infi-txt li.ten .icon {width: 54rem; height: 48rem; transform:rotate(-60deg); transition:transform 0.7s ease;}
+.ssam-event .sec.thr.active .copy span img{transform:translateY(0%);}
+.ssam-event .sec.thr.active .copy span:nth-child(2) img{transition-delay:0.1s}
+.ssam-event .sec.thr.active .unit1 {top: 291rem; left: 192rem; transform:scale(1); opacity:1; transition-delay:0.1s}
+.ssam-event .sec.thr.active .unit2 {top: 644rem; left: 122rem; transform:scale(1); opacity:1; transition-delay:0.1s}
+.ssam-event .sec.thr.active .unit3 {top: 669rem; left: 30rem; transform:scale(1); opacity:1; transition-delay:0.1s}
+.ssam-event .sec.thr.active .unit4 {top: 478rem; right: 425rem; transform:scale(1); opacity:1; transition-delay:0.1s}
+.ssam-event .sec.thr.active .unit5 {top: 445rem; right: 374rem; transform:scale(1); opacity:1; transition-delay:0.1s}
+.ssam-event .sec.thr.active .unit6 {bottom: 0rem; left: 390rem; transform:scale(1); opacity:1; transition-delay:0.1s}
+.ssam-event .sec.thr.active .unit7 {bottom: 232rem; right: 450rem; transform:scale(1); opacity:1; transition-delay:0.1s}
+.ssam-event .sec.thr.active .unit8 {top: 530rem; right: -141rem; transform:scale(1); opacity:1; transition-delay:0.1s}
+.ssam-event .sec.thr.active .unit9 {bottom: -20rem; right: 200rem; transform:scale(1); opacity:1; transition-delay:0.1s}
+.ssam-event .sec.thr.active .infi-txt {top: 592rem; opacity:1; transition-delay:0.7s}
+.ssam-event .sec.thr.active .infi-txt li.fir .icon {transform:rotate(0deg); transition-delay:0.75s}
+.ssam-event .sec.thr.active .infi-txt li.sec .icon {transform:rotate(0deg); transition-delay:0.75s}
+.ssam-event .sec.thr.active .infi-txt li.thr .icon {transform:rotate(0deg); transition-delay:0.75s}
+.ssam-event .sec.thr.active .infi-txt li.fou .icon {transform:rotate(0deg); transition-delay:0.75s}
+.ssam-event .sec.thr.active .infi-txt li.fiv .icon {transform:rotate(0deg); transition-delay:0.75s}
+.ssam-event .sec.thr.active .infi-txt li.six .icon {transform:rotate(0deg); transition-delay:0.75s}
+.ssam-event .sec.thr.active .infi-txt li.sev .icon {transform:rotate(0deg); transition-delay:0.75s}
+.ssam-event .sec.thr.active .infi-txt li.eig .icon {transform:rotate(0deg); transition-delay:0.75s}
+.ssam-event .sec.thr.active .infi-txt li.nin .icon {transform:rotate(0deg); transition-delay:0.75s}
+.ssam-event .sec.thr.active .infi-txt li.ten .icon {transform:rotate(0deg); transition-delay:0.75s}
+
+.ssam-event .info {position: relative; top:100vh; width: 100%; z-index:4; transition:top 0.7s ease;}
+.ssam-event .info.active{top:0;}
+.ssam-event .info h3 {width: 53rem; height: 28rem; margin: auto;}
+
+.ssam-event nav.tab {position: absolute; top: 0; left: 0; width: 100%; height: 120rem; background: #151418; z-index:10;}
+.ssam-event nav.tab .inner {display: flex; width: 1280rem; height: 120rem; margin: auto;}
+.ssam-event nav.tab .inner a {position: relative; display: flex; justify-content: center; text-align: center; align-items: center; width: 320rem; height: 120rem; margin: auto;  border-right: 1px solid rgba(255, 255, 255, 0.1);}
+.ssam-event nav.tab {position: absolute; top: 0; left: 0; width: 100%; height: 120rem; background: #151418; z-index:10;}
+.ssam-event nav.tab .inner {display: flex; width: 1280rem; height: 120rem; margin: auto;}
+.ssam-event nav.tab .inner a {position: relative; display: flex; justify-content: center; text-align: center; align-items: center; width: 320rem; height: 120rem; margin: auto;  border-right: 1px solid rgba(255, 255, 255, 0.1);}
+.ssam-event nav.tab .inner a:last-child {border-right: 0px solid rgba(255, 255, 255, 0.1);}
+.ssam-event nav.tab .inner a span {position:relative; font-weight:bold; color: #fff; font-size: 20rem; line-height: 128%; transition-duration: 0.5s; transition-property: color;}
+.ssam-event nav.tab .inner a span::after {content: ""; display: block; position: absolute; width: 8rem; height: 8rem; border-radius: 6rem; background: #FFEB56; opacity: 0; transition-duration: 0.5s; transition-property: opacity;}
+.ssam-event nav.tab .inner a:nth-child(1) span::after{right:22rem; top:-10rem;}
+.ssam-event nav.tab .inner a:nth-child(2) span::after{right:1rem; top:-10rem;}
+.ssam-event nav.tab .inner a:nth-child(3) span::after{right:-17rem; top:-10rem;}
+.ssam-event nav.tab .inner a:nth-child(4) span::after{right:-17rem; top:-10rem;}
+.ssam-event nav.tab .inner a.on span {color: #FFEB56;}
+.ssam-event nav.tab .inner a.on span::after {opacity: 1;}
+.ssam-event nav.tab.fixed{position:fixed;}
+.ssam-event nav.tab .inner a span {position:relative; font-weight:bold; color: #fff; font-size: 20rem; line-height: 128%; transition-duration: 0.5s; transition-property: color;}
+.ssam-event nav.tab .inner a span::after {content: ""; display: block; position: absolute; width: 8rem; height: 8rem; border-radius: 6rem; background: #FFEB56; opacity: 0; transition-duration: 0.5s; transition-property: opacity;}
+.ssam-event nav.tab .inner a:nth-child(1) span::after{right:22rem; top:-10rem;}
+.ssam-event nav.tab .inner a:nth-child(2) span::after{right:1rem; top:-10rem;}
+.ssam-event nav.tab .inner a:nth-child(3) span::after{right:-17rem; top:-10rem;}
+.ssam-event nav.tab .inner a:nth-child(4) span::after{right:-17rem; top:-10rem;}
+.ssam-event nav.tab .inner a.on span {color: #FFEB56;}
+.ssam-event nav.tab .inner a.on span::after {opacity: 1;}
+.ssam-event nav.tab.fixed{position:fixed;}
+
+.ssam-event .info .info1 {position: relative; width: 100%; padding: 168rem 0 165rem; background: #000;}
+.ssam-event .info .info1 > .txt1 {width: 583rem; height: 182rem; margin: 24rem auto 0;}
+.ssam-event .info .info1 .sche {display:flex; flex-direction: column; gap:3rem; width: 354rem; margin: 48rem auto 0;}
+.ssam-event .info .info1 .sche li{color: #fff; font-size: 20rem; font-weight: 500; line-height: 1.6; letter-spacing: -1.2px;}
+.ssam-event .info .info1 .process {display: flex; justify-content: space-between; position: relative; width: 1440rem; margin: 147rem auto 0; color: #fff;}
+.ssam-event .info .info1 .process .line {position: absolute; top: 75rem; left: 0rem; width: 1304rem; height: 1px; background: #575757;}
+.ssam-event .info .info1 .process .li {}
+.ssam-event .info .info1 .process .li .icon {position: relative;}
+.ssam-event .info .info1 .process .li .icon::after {content: ""; display: block; position: absolute; bottom: -28rem; left: 0rem; width: 9rem; height: 9rem; border-radius: 50%; background: #fff;}
+.ssam-event .info .info1 .process .li .txt1 {position: relative; margin-top: 64rem; font-weight: 800; font-size: 26rem;}
+.ssam-event .info .info1 .process .li .txt2 {margin-top: 12rem; font-weight: 500; font-size: 20rem; opacity:0.8}
+.ssam-event .info .info1 .process .li .icon {position: relative;}
+.ssam-event .info .info1 .process .li .icon::after {content: ""; display: block; position: absolute; bottom: -28rem; left: 0rem; width: 9rem; height: 9rem; border-radius: 50%; background: #fff;}
+.ssam-event .info .info1 .process .li .txt1 {position: relative; margin-top: 64rem; font-weight: 800; font-size: 26rem;}
+.ssam-event .info .info1 .process .li .txt2 {margin-top: 12rem; font-weight: 500; font-size: 20rem; opacity:0.8}
+
+.ssam-event .info .info2 {position: relative; width: 100%; padding: 168rem 0 100rem; background: #000;}
+.ssam-event .info .info2 > .txt1 {width: 657rem; height: 90rem; margin: 40rem auto 0;}
+.ssam-event .info .info2 .gallery {position: relative; top:200rem; left:-500rem; transform:scale(0.5); width: 1198rem; height: 383rem; margin: 94rem auto 0; opacity:0; transition: all 1s;}
+.ssam-event .info .info2 {position: relative; width: 100%; padding: 168rem 0 100rem; background: #000;}
+.ssam-event .info .info2 > .txt1 {width: 657rem; height: 90rem; margin: 40rem auto 0;}
+.ssam-event .info .info2 .gallery {position: relative; top:200rem; left:-500rem; transform:scale(0.5); width: 1198rem; height: 383rem; margin: 94rem auto 0; opacity:0; transition: all 1s;}
+.ssam-event .info .info2 .gallery .gall {position: absolute;}
+.ssam-event .info .info2 .gallery .gall:nth-child(1) {top: 205rem; left: 0; width: 174rem; height: 218rem; transition: top 0.7s ease;}
+.ssam-event .info .info2 .gallery .gall:nth-child(2) {top: 14rem; left: 210rem; width: 235rem; height: 294rem; transition: top 0.7s ease;}
+.ssam-event .info .info2 .gallery .gall:nth-child(3) {bottom: -44rem; left: 481rem; width: 236rem; height: 295rem; transition: bottom 0.7s ease;}
+.ssam-event .info .info2 .gallery .gall:nth-child(4) {top: -37rem; left: 753rem; width: 234rem; height: 293rem; transition: top 0.7s ease;}
+.ssam-event .info .info2 .gallery .gall:nth-child(5) {top: 40rem; left: 1022rem; width: 174rem; height: 218rem; transition: top 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt2 {overflow:hidden; position: absolute; top: 32rem; left: 322rem; transform:scale(0.7); width: 0; height: 139rem; transition: all 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt2 img {position: absolute; top: 0; left: 0; width: 320rem; height: 139rem; max-width:none;}
+.ssam-event .info .info2 .gallery .txt3 {overflow:hidden; position: absolute; top: 43rem; left: 506rem; transform:scale(0.7); width: 0; height: 131rem; transition: all 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt3 img {position: absolute; top: 0; left: 0; width: 290rem; height: 131rem; max-width:none;}
+.ssam-event .info .info2 .gallery .arrow {position: absolute; top: 251rem; left: 698rem; transform:scale(0.8) rotate(-20deg); width: 241rem; height: 147rem; width: 144rem; height: 88rem; transition: all 0.7s ease; opacity:0;}
+.ssam-event .info .info2 .gallery .cafe {position: absolute; top: 320rem; left: 799rem; transform:scale(0.7); width: 180rem; height: 127rem; opacity:0; transition: all 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt4 {overflow:hidden; position: absolute; top: 333rem; left: 930rem; transform:scale(0.7); width: 0; height: 131rem; transition: all 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt4 img {position: absolute; top: 0; left: 0; width: 191rem; height: 101rem; max-width:none;}
+.ssam-event .info .info2 .warn {width: 550rem; margin: 80rem auto 0; color: #fff; font-size: 20rem; font-weight: 700; line-height: 1.6;}
+.ssam-event .info .info2 .warn .t1 {position: relative; top:80rem; padding-left: 85rem; opacity:0; transition:top 1s ease, opacity 1s ease;}
+.ssam-event .info .info2 .gallery .gall:nth-child(1) {top: 205rem; left: 0; width: 174rem; height: 218rem; transition: top 0.7s ease;}
+.ssam-event .info .info2 .gallery .gall:nth-child(2) {top: 14rem; left: 210rem; width: 235rem; height: 294rem; transition: top 0.7s ease;}
+.ssam-event .info .info2 .gallery .gall:nth-child(3) {bottom: -44rem; left: 481rem; width: 236rem; height: 295rem; transition: bottom 0.7s ease;}
+.ssam-event .info .info2 .gallery .gall:nth-child(4) {top: -37rem; left: 753rem; width: 234rem; height: 293rem; transition: top 0.7s ease;}
+.ssam-event .info .info2 .gallery .gall:nth-child(5) {top: 40rem; left: 1022rem; width: 174rem; height: 218rem; transition: top 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt2 {overflow:hidden; position: absolute; top: 32rem; left: 322rem; transform:scale(0.7); width: 0; height: 139rem; transition: all 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt2 img {position: absolute; top: 0; left: 0; width: 320rem; height: 139rem; max-width:none;}
+.ssam-event .info .info2 .gallery .txt3 {overflow:hidden; position: absolute; top: 43rem; left: 506rem; transform:scale(0.7); width: 0; height: 131rem; transition: all 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt3 img {position: absolute; top: 0; left: 0; width: 290rem; height: 131rem; max-width:none;}
+.ssam-event .info .info2 .gallery .arrow {position: absolute; top: 251rem; left: 698rem; transform:scale(0.8) rotate(-20deg); width: 241rem; height: 147rem; width: 144rem; height: 88rem; transition: all 0.7s ease; opacity:0;}
+.ssam-event .info .info2 .gallery .cafe {position: absolute; top: 320rem; left: 799rem; transform:scale(0.7); width: 180rem; height: 127rem; opacity:0; transition: all 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt4 {overflow:hidden; position: absolute; top: 333rem; left: 930rem; transform:scale(0.7); width: 0; height: 131rem; transition: all 0.7s ease;}
+.ssam-event .info .info2 .gallery .txt4 img {position: absolute; top: 0; left: 0; width: 191rem; height: 101rem; max-width:none;}
+.ssam-event .info .info2 .warn {width: 550rem; margin: 80rem auto 0; color: #fff; font-size: 20rem; font-weight: 700; line-height: 1.6;}
+.ssam-event .info .info2 .warn .t1 {position: relative; top:80rem; padding-left: 85rem; opacity:0; transition:top 1s ease, opacity 1s ease;}
+.ssam-event .info .info2 .warn .t1 > span {position: absolute; top: 0; left: 0;}
+.ssam-event .info .info2 .warn .t2 {position: relative; margin-top: 10rem; padding-left: 30rem; font-weight: 500;}
+.ssam-event .info .info2 .warn .t2 > span {position: absolute; top: 0; left: 0;}
+.ssam-event .info .info2.active .gallery{top:0; left:0; transform:scale(1); opacity:1;}
+.ssam-event .info .info2.active .gallery .gall:nth-child(1) {top: 165rem; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .gall:nth-child(2) {top: 54rem; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .gall:nth-child(3) {bottom: 4rem; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .gall:nth-child(4) {top: 17rem; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .gall:nth-child(5) {top: 0; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .txt2 {top:-12rem; width:320rem; transform:scale(1); transition-delay:1s}
+.ssam-event .info .info2.active .gallery .txt3 {top:13rem; width:320rem; transform:scale(1); transition-delay:1s}
+.ssam-event .info .info2.active .gallery .arrow {transform:scale(1) rotate(0); opacity:1; transition-delay:1.7s}
+.ssam-event .info .info2.active .gallery .cafe {transform:scale(1); opacity:1; transition-delay:1.7s}
+.ssam-event .info .info2.active .gallery .txt4 {top: 288rem; width: 191rem; transform:scale(1); transition-delay:1.7s}
+.ssam-event .info .info2.active .warn .t1 {top:0; opacity:1; transition-delay:1.7s}
+
+.ssam-event .info .info3 {position: relative; width: 100%; padding: 168rem 0 97rem; background:#FFF7F7;}
+.ssam-event .info .info2.active .gallery{top:0; left:0; transform:scale(1); opacity:1;}
+.ssam-event .info .info2.active .gallery .gall:nth-child(1) {top: 165rem; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .gall:nth-child(2) {top: 54rem; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .gall:nth-child(3) {bottom: 4rem; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .gall:nth-child(4) {top: 17rem; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .gall:nth-child(5) {top: 0; transition-delay:0.1s}
+.ssam-event .info .info2.active .gallery .txt2 {top:-12rem; width:320rem; transform:scale(1); transition-delay:1s}
+.ssam-event .info .info2.active .gallery .txt3 {top:13rem; width:320rem; transform:scale(1); transition-delay:1s}
+.ssam-event .info .info2.active .gallery .arrow {transform:scale(1) rotate(0); opacity:1; transition-delay:1.7s}
+.ssam-event .info .info2.active .gallery .cafe {transform:scale(1); opacity:1; transition-delay:1.7s}
+.ssam-event .info .info2.active .gallery .txt4 {top: 288rem; width: 191rem; transform:scale(1); transition-delay:1.7s}
+.ssam-event .info .info2.active .warn .t1 {top:0; opacity:1; transition-delay:1.7s}
+
+.ssam-event .info .info3 {position: relative; width: 100%; padding: 168rem 0 97rem; background:#FFF7F7;}
+.ssam-event .info .info3 > .txt1 {width: 714rem; height: 90rem; margin: 40rem auto 0;}
+.ssam-event .info .info3 > ul {display: flex; justify-content: space-between; width: 1030rem; margin: 104rem auto 0; text-align: center; font-size: 28rem; font-weight: 700; line-height: 1.36;}
+.ssam-event .info .info3 > ul li:nth-child(1) {width: 465rem;}
+.ssam-event .info .info3 > ul li:nth-child(2) {width: 450rem;}
+.ssam-event .info .info3 > ul li .img {position: relative; width: 100%; height: 277rem;}
+.ssam-event .info .info3 > ul li:nth-child(1) .img > img {width: 463rem; height: 160rem;}
+.ssam-event .info .info3 > ul li:nth-child(2) .img > img {width: 351rem; height: 160rem;}
+.ssam-event .info .info3 > ul li .img .txt {position:relative; width: 100%; padding-top: 40rem; letter-spacing: -0.5px;}
+.ssam-event .info .info3 > ul li .img .txt span {position: absolute; top: -25rem; left: 50%; transform: translate(-50%, 0); width: 48rem; height: 50rem;}
+.ssam-event .info .info3 > ul li .img .txt {position:relative; width: 100%; padding-top: 40rem; letter-spacing: -0.5px;}
+.ssam-event .info .info3 > ul li .img .txt span {position: absolute; top: -25rem; left: 50%; transform: translate(-50%, 0); width: 48rem; height: 50rem;}
+.ssam-event .info .info3 > dl {width: 746rem; margin: 80rem auto 0;}
+.ssam-event .info .info3 > dl dt {font-size: 20rem; font-weight: 700; margin-bottom: 16rem;}
+.ssam-event .info .info3 > dl dd {position: relative; padding-left: 15rem; font-size: 18rem; font-weight: 500; line-height: 1.6; margin-bottom: 4rem;}
+.ssam-event .info .info3 > dl dd::before {content: "ㆍ"; display: block; position: absolute; top: 0; left: 0;}
+
+.ssam-event .info .info4 {position: relative; width: 100%; height: calc(100vh + 1px);}
+.ssam-event .info .info4:after{display:block; content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4);}
+.ssam-event .info .info4 .txt-area {position: absolute; top: 65%; left: 50%; height: 386rem; transform: translate(-50%, -50%); text-align: center; z-index:1; opacity:0; transition:top 1s ease, opacity 1s ease;}
+.ssam-event .info .info4 {position: relative; width: 100%; height: calc(100vh + 1px);}
+.ssam-event .info .info4:after{display:block; content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4);}
+.ssam-event .info .info4 .txt-area {position: absolute; top: 65%; left: 50%; height: 386rem; transform: translate(-50%, -50%); text-align: center; z-index:1; opacity:0; transition:top 1s ease, opacity 1s ease;}
+.ssam-event .info .info4 .txt-area .txt1 {width: 421rem; height: 169rem; margin: auto;}
+.ssam-event .info .info4 .txt-area .txt2 {width: 547rem; height: 156rem; margin: 64rem auto 80rem;}
+.ssam-event .info .info4 .txt-area .bt {display: block; width: 337rem; height: 90rem; margin: auto;}
+.ssam-event .info .info4.active .txt-area{top:50%; opacity:1;}
+
+.ssam-event .video-area{position:fixed; bottom:0; left:0; width:100%; height: calc(100vh + 1px);}
+.ssam-event .video-area video{position:absolute; top:0; left:0; width:100%; height:100%; object-fit: cover;}
+.ssam-event .info .info4.active .txt-area{top:50%; opacity:1;}
+
+.ssam-event .video-area{position:fixed; bottom:0; left:0; width:100%; height: calc(100vh + 1px);}
+.ssam-event .video-area video{position:absolute; top:0; left:0; width:100%; height:100%; object-fit: cover;}
+
+.fc-blue{color: #003ac9;}
+/* 팝업 공통 설정 */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  color: #302c2b;
+  box-sizing: border-box;
+}
+
+.popup .popup-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 900rem;
+  width: calc(100% - 40rem);
+  max-width: 768rem;
+  max-height: calc(100vh - 100rem);
+  background: #fff;
+  border-radius: 40rem;
+}
+
+/* 팝업 헤더 */
+.pop-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96rem;
+  gap: 20rem;
+  text-align: center;
+  background-color: #f8fe23;
+  border-radius: 40rem 40rem 0 0;
+}
+
+.pop-head .title {
+  font-size: 32rem;
+  font-weight: 800;
+  letter-spacing: -0.64rem;
+  font-family: var(--bs-font-sans-serif);
+}
+
+/* 팝업 바디 */
+.pop-body {
+  width: 100%;
+  height: calc(100% - 224rem);
+  padding: 48rem 10rem 0 64rem;
+  font-size: 20rem;
+}
+
+.pop-body p {
+  line-height: 1.44;
+}
+
+.popup-box {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 44rem;
+}
+
+.popup-box::-webkit-scrollbar,
+.agree-inner::-webkit-scrollbar {
+  width: 10rem;
+}
+
+.popup-box::-webkit-scrollbar-thumb,
+.agree-inner::-webkit-scrollbar-thumb {
+  background: #dbdbdb;
+  border-radius: 50rem;
+}
+
+.popup-box::-webkit-scrollbar-track,
+.agree-inner::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border-radius: 50rem;
+}
+
+/* 폼 영역 */
+.form-wrap {
+  padding-right: 10rem;
+}
+
+.form-wrap > .input-row + .input-row {
+  margin-top: 20rem;
+}
+
+.input-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10rem;
+}
+
+.input-row > .label {
+  width: 130rem;
+  flex-shrink: 0;
+  font-size: 20rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #222;
+  height: 60rem;
+}
+.input-row.challenge > .label {
+  height: auto;
+}
+.input-row .right {
+  width: calc(100% - 140rem) ;
+}
+
+.form-wrap input {
+  width: 100%;
+  height: 60rem;
+  padding: 15rem 29rem;
+  font-size: 20rem;
+  background-color: #f2f2f2;
+  border-radius: 10rem;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+.form-wrap input#custom-input{
+  padding: 10rem 20rem;
+  font-size: 16rem;
+  border-radius: 20rem;
+  height: 41rem;
+}
+.form-wrap input:read-only {
+  color: #000;
+  font-weight: 600;
+}
+.input-row .msg-box {
+  margin-top: 20rem;
+  font-size: 16rem;
+  line-height: 1.44;
+  color: #666;
+  font-weight: 500;
+}
+
+.input-row .msg-box a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.input-row .txt {
+  font-weight: 600;
+  color: #003ac9;
+}
+/* 챌린지 관련 */
+.category-group{
+  padding-left: 140rem;
+  margin-top: 24rem;
+}
+
+.form-group + .form-group {
+  margin-top: 24rem;
+}
+.form-group + .form-group.option-hide {
+  margin-top: 32rem;
+}
+.form-group.show + .form-group.option-hide {
+  margin-top: 24rem;
+}
+.form-group > .label {
+  font-size: 20rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 16rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrow-icon {
+  width: 10rem;
+  height: 9rem;
+  transition: transform 0.3s;
+}
+.arrow-icon path {
+  stroke: #000;
+}
+
+.form-group .options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  align-items: flex-start;
+  width: 100%;
+}
+.form-group .options button {
+  padding: 10rem 20rem;
+  font-size: 16rem;
+  font-weight: 600;
+  color: #666;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 20rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form-group .options button.active {
+  color: #003ac9;
+  background-color: #fff;
+  border-color: #003ac9;
+}
+
+
+/* sub category */
+.sub-form-group > .label {
+  opacity: 0.4;
+}
+.sub-form-group .sub-category {
+  display: none;
+}
+.sub-form-group.active .sub-category {
+  display: block;
+}
+
+.sub-form-group.active .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.sub-form-group.active > .label {
+  opacity: 1;
+}
+
+.sub-category.options-box2 .options {
+  display: none;
+}
+.sub-category.options-box2 .options.active {
+  display: flex;
+}
+/* 버튼 영역 */
+.popup .btn-wrap {
+  padding: 40rem 0;
+  text-align: center;
+}
+
+.popup .btn-wrap .btn {
+  display: inline-block;
+  padding: 14rem 32rem;
+  font-size: 18rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #003ac9;
+  border-radius: 200rem;
+  line-height: 1;
+}
+.popup .btn-wrap .btn:disabled {
+  background-color: #000;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* 팝업 닫기 버튼 */
+.pop-close {
+  position: absolute;
+  top: 32rem;
+  right: -24rem;
+  width: 24rem;
+  height: 24rem;
+  background: url(../images/close-btn.svg) no-repeat center / contain;
+  transform: translateX(100%);
+}
+
+/* 약관 영역 */
+.agree-ttl {
+  margin-bottom: 16rem;
+  font-weight: 600;
+  color: #222;
+  line-height: 1;
+}
+
+.agree-box {
+  height: 244rem;
+  padding: 24rem 14rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10rem;
+  font-size: 18rem;
+  line-height: 1.444;
+  color: #333;
+}
+
+.agree-inner {
+  height: 100%;
+  padding: 0 10rem;
+  overflow-y: auto;
+}
+
+.agree-box strong {
+  display: block;
+  margin-bottom: 16rem;
+}
+
+.agree-box p + strong {
+  margin-top: 24rem;
+}
+
+/* 체크박스 */
+.chk-wrap {
+  text-align: right;
+}
+
+.chk-box {
+  position: relative;
+  display: inline-block;
+  padding-left: 23rem;
+  margin-top: 10rem;
+  font-size: 16rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chk-box input[type="checkbox"] {
+  display: none;
+}
+
+.chk-box span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 15rem;
+  height: 15rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4rem;
+  transform: translateY(-50%);
+}
+
+.chk-box span:after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 8rem;
+  border: solid #003ac9;
+  border-width: 0 2rem 2rem 0;
+  top: 1rem;
+  left: 4.5rem;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.chk-box input[type="checkbox"]:checked + span:after {
+  display: block;
+}
+
+/* 완료 텍스트 */
+.popup .com-txt {
+  font-weight: 700;
+  text-align: center;
+}
+
+.popup .com-txt span {
+  color: #888;
+}
+
+/* 팝업 사이즈 조정 예외 */
+#popup03 .popup-inner {
+  max-width: 480rem;
+  height: auto;
+  border-radius: 20rem;
+}
+
+#popup03 .popup-box {
+  padding-right: 0;
+}
+#popup03 .pop-body {
+  padding: 40rem 20rem 0;
+}
+
+#popup03 .btn-wrap {
+  padding-top: 28rem;
+}
+
+@media screen and (max-width: 1024px) {
+.popup .popup-inner {
+  border-radius: 24rem;
+}
+
+  .pop-head{
+    height: 59rem;
+    border-radius: 24rem 24rem 0 0;
+  }
+  .pop-head .title{
+    font-size: 20rem;
+  }
+/* 팝업 바디 */
+.pop-body {
+  height: calc(100% - 164rem);
+  padding: 24rem 10rem 0 20rem;
+  font-size: 15rem;
+}
+.popup-box {
+  padding-right: 10rem;
+}
+
+.popup-box::-webkit-scrollbar,
+.agree-inner::-webkit-scrollbar {
+  width: 3rem;
+}
+/* 폼 영역 */
+.form-wrap {
+  padding-right: 0rem;
+}
+
+.form-wrap > .input-row + .input-row {
+  margin-top: 20rem;
+}
+
+.input-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10rem;
+}
+
+.input-row > .label {
+  font-size: 15rem;
+  height: 48rem;
+}
+.form-wrap input {
+  height: 48rem;
+  padding: 15rem 29rem;
+  font-size: 15rem;
+  border-radius: 10rem;
+}
+.form-wrap input#custom-input{
+  height: 38rem;
+  font-size: 14rem;
+}
+.input-row .msg-box {
+  margin-top: 20rem;
+  font-size: 14rem;
+}
+.input-row .msg-box p{
+  text-indent: -0.5em;
+}
+
+.input-row .msg-box a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* 챌린지 관련 */
+
+.category-group{
+  padding-left: 0;
+  margin-top: 20rem;
+}
+.form-group + .form-group {
+  margin-top: 32rem;
+}
+.form-group + .form-group.option-hide {
+  margin-top: 32rem;
+}
+.form-group.show + .form-group.option-hide {
+  margin-top: 32rem;
+}
+.form-group > .label {
+  font-size: 16rem;
+}
+
+.form-group .options button {
+  font-size: 14rem;
+}
+
+/* 버튼 영역 */
+.popup .btn-wrap {
+  padding: 32rem 0;
+}
+
+.popup .btn-wrap .btn {
+  font-size: 15rem;
+}
+/* 팝업 닫기 버튼 */
+.pop-close {
+          top: -7rem;
+        right: -3rem;
+        transform: translate(0, -100%);
+}
+
+/* 약관 영역 */
+.agree-ttl {
+  margin-bottom: 10rem;
+}
+.agree-box {
+  height: 200rem;
+  padding: 20rem 10rem;
+  font-size: 14rem;
+}
+.agree-box strong {
+  margin-bottom: 10rem;
+}
+
+.agree-box p + strong {
+  margin-top: 24rem;
+}
+
+/* 체크박스 */
+.chk-wrap {
+  text-align: right;
+}
+
+.chk-box {
+  font-size: 14rem;
+}
+
+}
+@media screen and (max-width: 600px) {
+
+.input-row > .label {
+  width: 50rem;
+ 
+}
+.input-row .right {
+  width: 232rem;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  html {font-size: .130vw;}
+
+  .only-web{display:none !important;}
+  .only-mob{display:block !important;}
+
+  .ssam-event h1{top:30rem; left:20rem; width:74rem; height:20rem;}
+  .ssam-event h1 a{display:block; height:100%;}
+  .ssam-event h1 a img{width:100%;}
+  .ssam-event h2{top:30rem; right:20rem; width:105rem; height:20rem;}
+
+  .ssam-event .sec.one{position:relative;}
+  .ssam-event .sec.one.active{height:100vh}
+  .ssam-event .sec.one .sec-wrap .replay-btn{right:20rem; bottom:20rem;}
+
+  .ssam-event .sec.one .background-pack .two{background:url("../images/ssam-s2-bg-mo.jpg") no-repeat left top/auto 100% #003AC9;}
+  .ssam-event .sec.one .background-pack .thr{background:url("../images/ssam-s3-bg-mo.jpg") no-repeat left top/auto 100% #FF6436;}
+
+  .ssam-event .sec.one .txt-pack{top:88rem; width:calc(100% - 16rem);}
+  .ssam-event .sec.one .txt-pack .scene1{width:100%; height:125rem;}
+  .ssam-event .sec.one .txt-pack .scene1 .one{width:117rem; height:125rem;}
+  .ssam-event .sec.one .txt-pack .scene1 .two{width:168rem; height:125rem;}
+  .ssam-event .sec.one .txt-pack .scene2{width:100%; height:125rem;}
+  .ssam-event .sec.one .txt-pack .scene2 .one{width:117rem; height:125rem;}
+  .ssam-event .sec.one .txt-pack .scene2 .two{left:125rem; top:-3rem; width:70rem; height:120rem;}
+  .ssam-event .sec.one .txt-pack .scene2 .thr{width:164rem; height:125rem;}
+  .ssam-event .sec.one .txt-pack .scene3{width:100%; height:125rem;}
+  .ssam-event .sec.one .txt-pack .scene3 .one{width:117rem; height:125rem;}
+  .ssam-event .sec.one .txt-pack .scene3 .two{left:46%; top:47rem; width:70rem; height:120rem;}
+  .ssam-event .sec.one .txt-pack .scene3 .thr{top:0; right:0;width:164rem; height:125rem;}
+
+  .ssam-event .sec.one .copy-pack{bottom:66rem; width:264rem; height:100rem;}
+  .ssam-event .sec.one .copy-pack .one:after{display:block; content:""; position:absolute; bottom:-66rem; left:50%; transform:translate(-50%, 0); width:100vw; height:382rem; background:linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.8));}
+  .ssam-event .sec.one .copy-pack > p{width:264rem; height:100rem;}
+  .ssam-event .sec.one .copy-pack > p > span:nth-child(1) > img{width:264rem; height:48rem;}
+  .ssam-event .sec.one .copy-pack > p > span:nth-child(2){left:4rem; margin-top:4rem; width:254rem; height:48rem;}
+  .ssam-event .sec.one .copy-pack > p > span:nth-child(2) > img{width:254rem; height:48rem;}
+  .ssam-event .sec.one .copy-pack .two:after{bottom:-66rem; height:382rem; background:linear-gradient(to bottom,rgba(0,58,201,0) 0%, rgba(0,58,201,0.8) 100%)}
+  .ssam-event .sec.one .copy-pack .thr:after{bottom:-66rem; height:382rem; background:linear-gradient(to bottom,rgba(255,100,54,0) 0%, rgba(255,100,54,1) 100%)}
+
+  .ssam-event .sec.one .people-pack{width:100%; height:100vh;}
+  .ssam-event .sec.one .people-pack .scene1{transform:translate(-50%, 0); width:100%; height:100vh;}
+  .ssam-event .sec.one .people-pack .scene1 .one{left:160rem; bottom:-13rem; width:154rem; height:337rem;}
+  .ssam-event .sec.one .people-pack .scene1 .one img{width:100%;}
+  .ssam-event .sec.one .people-pack .scene1 .two{right:60rem; width:351rem; height:484rem;}
+  .ssam-event .sec.one .people-pack .scene1 .two img{width:100%;}
+  .ssam-event .sec.one .people-pack .scene1 .thr{left:52%; width:360rem; height:527rem;}
+  .ssam-event .sec.one .people-pack .scene1 .thr img{width:100%;}
+  .ssam-event .sec.one .people-pack .scene2{width:100%; height:100vh;}
+  .ssam-event .sec.one .people-pack .scene2 .one{left:150rem; width:254rem; height:459rem;}
+  .ssam-event .sec.one .people-pack .scene2 .one img{width:100%;}
+  .ssam-event .sec.one .people-pack .scene2 .two{left:auto; right:180rem; bottom:0; width:278rem; height:541rem;}
+  .ssam-event .sec.one .people-pack .scene3 .one{right:40rem; bottom:-30rem; width:337rem; height:367rem;}
+  .ssam-event .sec.one .people-pack .scene3 .two{left:100rem; bottom:80rem; width:387rem; height:437rem;}
+
+  .ssam-event .sec.one .obj-pack{display:none;}
+
+  .ssam-event .contents > h3{display:none;}
+  .ssam-event .sec.two{position:relative; padding:32rem 0 48rem; height:auto;}
+  .ssam-event .sec.two .copy{top:363rem; transform:translate(-50%, 0); width:256rem; height:168rem;}
+  .ssam-event .sec.two .copy .main{width:100%; height:100%;}
+  .ssam-event .sec.two .copy .main span{height:54rem;}
+  .ssam-event .sec.two .copy .main span.only-web{display:none !important;}
+  .ssam-event .sec.two .copy .main span.only-mob{display:flex !important;}
+  .ssam-event .sec.two .copy .main span img{transform:translateY(200%)}
+  .ssam-event .sec.two .copy .main span:nth-child(3) img{width:81rem;}
+  .ssam-event .sec.two .copy .main span:nth-child(4) img{width:251rem;}
+  .ssam-event .sec.two .copy .main span:nth-child(5) img{width:246rem;}
+  .ssam-event .sec.two .copy h3{display:block; position:relative; top:-35rem; height:17rem; text-align: center; opacity:0; transition:opacity 0.8s ease;}
+  .ssam-event .sec.two .copy h3 img{height:100%;}
+  .ssam-event .sec.two .copy .unit1{left:-10rem; top:-10rem; width:59rem; height:40rem}
+  .ssam-event .sec.two .copy .unit2{left:70%; top:41%; width:21rem; height:19rem}
+  .ssam-event .sec.two .copy .unit3{right:30rem; width:28rem; height:27rem;}
+  .ssam-event .sec.two .copy .unit4{left:40rem; bottom:-40rem; width:25rem; height:25rem;}
+  .ssam-event .sec.two .txt-wrap{display:flex; flex-direction: column;}
+  .ssam-event .sec.two .txt1{position:relative; top:0; left:0; margin-left:32rem;}
+  .ssam-event .sec.two .txt1 span{padding:12rem 16rem; font-size:14rem;}
+  .ssam-event .sec.two .txt2{position:relative; top:0; left:0; margin:24rem 20rem 0 0; text-align: right;}
+  .ssam-event .sec.two .txt2 span{padding:12rem 16rem; text-align: left; font-size:14rem;}
+  .ssam-event .sec.two .txt3{position:relative; top:0; left:0; margin:12rem 0 0 25rem;}
+  .ssam-event .sec.two .txt3 span{padding:12rem 16rem; font-size:14rem;}
+  .ssam-event .sec.two .txt4{position:relative; top:0; left:0; margin:331rem 20rem 0 0; text-align: right;}
+  .ssam-event .sec.two .txt4 span{padding:12rem 16rem; font-size:14rem; text-align: left;}
+  .ssam-event .sec.two .txt5{position:relative; top:0; left:0; margin:20rem 0 0 77rem}
+  .ssam-event .sec.two .txt5 span{padding:12rem 16rem; font-size:14rem;}
+  .ssam-event .sec.two.active .copy .unit1{top:30rem; left:29rem;}
+  .ssam-event .sec.two.active .copy .unit2{left:65%; top:41%}
+  .ssam-event .sec.two.active .copy .unit3{right:-17rem; top:88rem;}
+  .ssam-event .sec.two.active .copy .unit4{bottom:-6rem; left:80rem;}
+  .ssam-event .sec.two.active .copy h3{opacity:1;}
+
+  .ssam-event .sec.thr{padding:185rem 0 155rem; height:auto;}
+  .ssam-event .sec.thr .copy{position:relative; top:0; width:100%; height:210rem;}
+  .ssam-event .sec.thr .copy span:not(.sub-tit){height:70rem;}
+  .ssam-event .sec.thr .copy span.sub-tit{position:absolute; top:-35rem; height:17rem;}
+  .ssam-event .sec.thr .copy span.sub-tit img{transform:translateY(0); width:auto; height:17rem; opacity:0;}
+  .ssam-event .sec.thr .copy span.only-mob{display:flex !important; align-items: center; justify-content: center;}
+  .ssam-event .sec.thr .copy span img{height:56rem;}
+  .ssam-event .sec.thr .copy span:nth-child(2) img{width:100%;}
+  .ssam-event .sec.thr .infi-txt{position:relative; top:80rem; margin-top:48rem; width:100%; height:244rem;}
+  .ssam-event .sec.thr .infi-txt li .txt{font-size:14rem;}
+  .ssam-event .sec.thr .infi-txt li.fir .icon {width: 21rem; height: 24rem;}
+  .ssam-event .sec.thr .infi-txt li.sec .icon {width: 22rem; height: 24rem;}
+  .ssam-event .sec.thr .infi-txt li.thr .icon {width: 22rem; height: 22rem;}
+  .ssam-event .sec.thr .infi-txt li.fou .icon {width: 27rem; height: 24rem;}
+  .ssam-event .sec.thr .infi-txt li.fiv .icon {width: 30rem; height: 22rem;}
+  .ssam-event .sec.thr .infi-txt li.six .icon {width: 35rem; height: 22rem;}
+  .ssam-event .sec.thr .infi-txt li.sev .icon {width: 30rem; height: 24rem;}
+  .ssam-event .sec.thr .infi-txt li.eig .icon {width: 21rem; height: 26rem;}
+  .ssam-event .sec.thr .infi-txt li.nin .icon {width: 14rem; height: 24rem;}
+  .ssam-event .sec.thr .infi-txt li.ten .icon {width: 27rem; height: 24rem;}
+  .ssam-event .sec.thr .infi-txt .cover{width:100%; height:244rem;}
+  .ssam-event .sec.thr .infi-txt .cover img{width:100%; height:100%;}
+  .ssam-event .sec.thr .unit2,
+  .ssam-event .sec.thr .unit3,
+  .ssam-event .sec.thr .unit7,
+  .ssam-event .sec.thr .unit9{display:none;}
+  .ssam-event .sec.thr .unit1{top:0; left:-66rem; width:85rem; height:50rem;}
+  .ssam-event .sec.thr .unit4{top:60rem; right:17rem; width:46rem; height:31rem;}
+  .ssam-event .sec.thr .unit5{top:40rem; right:-20rem; width:20rem; height:20rem;}
+  .ssam-event .sec.thr .unit6{left:-20rem; width:87rem; height:59rem;}
+  .ssam-event .sec.thr .unit8{top:auto; bottom:24rem; right:-95rem; width:160rem; height:96rem;}
+  .ssam-event .sec.thr.active .infi-txt{top:0;}
+  .ssam-event .sec.thr.active .unit1{top:56rem; left:-26rem;}
+  .ssam-event .sec.thr.active .unit4{top:101rem; right:57rem;}
+  .ssam-event .sec.thr.active .unit5{top:81rem; right:20rem;}
+  .ssam-event .sec.thr.active .unit6{left:20rem;}
+  .ssam-event .sec.thr.active .unit8{top:auto; bottom:24rem; right:-55rem;}
+  .ssam-event .sec.thr.active .copy span.sub-tit img{opacity:1;}
+
+  .ssam-event .contents{position:relative; height:auto;}
+
+  .ssam-event .info{top:0;}
+  .ssam-event .info h3{width:31rem; height:17rem;}
+  .ssam-event .info .info1{padding:100rem 20rem;}
+  .ssam-event .info .info1 > .txt1{margin:12rem auto 0; width:320rem; height:102rem;}
+  .ssam-event .info .info1 .sche{margin:24rem auto 0;width:283rem;}
+  .ssam-event .info .info1 .sche li{font-size:16rem;}
+  .ssam-event .info .info1 .process{flex-wrap:wrap; gap:50rem 10rem; width:100%;}
+  .ssam-event .info .info1 .process .line{width:100%;}
+  .ssam-event .info .info1 .process .li{width:calc((100% - 10rem) / 2)}
+  .ssam-event .info .info1 .process .li:last-child{margin-left:calc(50% + 10rem);}
+  .ssam-event .info .info1 .process .li .txt1{font-size:17rem;}
+  .ssam-event .info .info1 .process .li .txt2{font-size:15rem;}
+  .ssam-event .info .info1 .process .li .icon::after {width: 6rem; height: 6rem;}
+  .ssam-event .info .info2{overflow:hidden;}
+  .ssam-event .info .info3 > ul{flex-wrap:wrap; width:100%;}
+  
+  .ssam-event nav.tab{display:none;}
+
+  .ssam-event .video-area{position:absolute;}
+}
+
+@media screen and (max-width: 600px) {
+  html {font-size: .28vw;}
+}

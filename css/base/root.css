@@ -1,0 +1,65 @@
+@charset "UTF-8";
+:root {
+  --bs-primary: #08956d;
+  --bs-secondary: #43cb96;
+  --bs-lighten: #c4f1d2;
+  --bs-lighten2: #f3fff4;
+  --bs-light-gray: #d9d9d9;
+  --bs-gray: #b3b3b3;
+  --bs-dark: #222;
+  --bs-dark-gray: #666;
+  --bs-gold: #8e7247;
+  --bs-red: #ff0000;
+  --bs-yellow: #ffd200;
+  --bs-white: #fff;
+  --bs-tc-lignt: #fff;
+  --bs-tc-faint: #c4c4c5;
+  --bs-tc-weak: #494949;
+  --bs-tc-clear: #303030;
+  --bs-tc-strong: #212121;
+  --bs-font-sans-serif: "Pretendard";
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 20rem;
+  --bs-body-line-height: 1.4285;
+  --bs-body-letter-spacing: -0.04em;
+  --bs-body-font-weight: 400;
+  --bs-body-color: #000;
+  --bs-body-bg: #fff;
+  --bs-main-ttl: 56rem;
+  --bs-main-txt: 24rem;
+  --bs-ttl1: 28rem;
+  --bs-ttl2: 40rem;
+  --bs-ttl3: 24rem;
+  --bs-table-font-size: 20rem;
+  --bs-con-ttl: 24rem;
+  --bs-card-top: 24rem;
+
+  --bs-body1: 20rem;
+  --bs-body2: 26rem;
+  --bs-body3: 24rem;
+  --bs-caption1: 20rem;
+  --bs-caption2: 16rem;
+  --bs-fw-bold: 700;
+  --bs-fw-medium: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --bs-body-font-size: 16rem;
+    --bs-body-line-height: 1.3;
+    --bs-main-ttl: 24rem;
+    --bs-main-txt: 16rem;
+    --bs-ttl1: 20rem;
+    --bs-ttl2: 24rem;
+    --bs-ttl3: ;
+    --bs-table-font-size: 16rem;
+    --bs-con-ttl: 20rem;
+    --bs-card-top: 20rem;
+
+    --bs-body1: 16rem;
+    --bs-body2: 22rem;
+    --bs-body3: 16rem;
+    --bs-caption1: 16rem;
+    --bs-caption2: 16rem;
+  }
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YBM WEEMO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/lib/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/lib/gsap.min.js"></script>
+    <script src="./js/lib/ScrollTrigger.min.js"></script>
+    <script src="./js/lib/script.js"></script>
+  </head>
+  <body class="">
+    <div class="wrapper">
+      <header class="flex-b-c">
+        <h1>
+          <a href=""><img src="images/logo1.png" alt="Y클라우드" /></a>
+        </h1>
+        <h2>
+          <a href=""><img src="images/logo2.png" alt="YBM" /></a>
+        </h2>
+      </header>
+      <section class="sec1">
+        <div class="inner">
+          <picture class="main_ttl1">
+            <source media="(min-width: 601px)" srcset="./images/main_ttl1.png" />
+            <source media="(max-width: 600px)" srcset="./images/main_ttl1_mo.png" />
+            <img src="./images/main_ttl1.png" alt="Youar Best Moment 사진 공모전 투표 이벤트" />
+          </picture>
+          <picture class="main_ttl2">
+            <source media="(min-width: 601px)" srcset="./images/main_ttl2.png" />
+            <source media="(max-width: 600px)" srcset="./images/main_ttl2_mo.png" />
+            <img src="./images/main_ttl2.png" alt="선생님의 최애 MOMENT를 뽑아주세요" />
+          </picture>
+          <picture class="main_date">
+            <source media="(min-width: 601px)" srcset="./images/main_date.png" />
+            <source media="(max-width: 600px)" srcset="./images/main_date_mo.png" />
+            <img src="./images/main_date.png" alt="투표기간 2025년 7월 14일(월)~7월 27일(일)" />
+          </picture>
+          <figure class="main_visual">
+            <img src="./images/main_visual.png" alt="" />
+          </figure>
+          <div class="main_txt_wrapper">
+            <picture class="main_txt">
+              <source media="(min-width: 601px)" srcset="./images/main_txt.png" />
+              <source media="(max-width: 600px)" srcset="./images/main_txt_mo.png" />
+              <img
+                class="long-txt-img"
+                src="./images/main_txt.png"
+                alt="Your Best Moment 사진 공모전에 제출해주신 사진 중 1차 예선을 통과한 30작품에 대한 선생님의 Pick을 알려주세요. 투표를 통해 대상, 최우수상, 우수상, 장려상이 결정됩니다! 수상작은 온,오프라인 전시회에서 만나 보실 수 있습니다."
+              />
+            </picture>
+            <p class="fallback-text" aria-hidden="true">
+              Your Best Moment 사진 공모전에 제출해주신 <br />
+              사진 중 1차 예선을 통과한 30작품에 대한<br />
+              선생님의 Pick을 알려주세요.<br />
+              투표를 통해 대상, 최우수상, 우수상, 장려상이 결정됩니다! <br />
+              수상작은 온,오프라인 전시회에서 만나 보실 수 있습니다.
+            </p>
+          </div>
+          <picture class="sec1_ttl">
+            <source media="(min-width: 601px)" srcset="./images/sec1_ttl.png" />
+            <source media="(max-width: 600px)" srcset="./images/sec1_ttl_mo.png" />
+            <img src="./images/sec1_ttl.png" alt="선생님의 Best Moment" />
+          </picture>
+          <p class="font32 fw-medium">마음에 드는 사진에 ♡를 클릭해주세요.</p>
+          <div class="swiper best-slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon active"></button>
+                    <div class="count">1</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">2</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">3</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">4</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">5</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">2</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">2</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">2</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">2</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">2</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">2</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">2</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">
+                  <figure>
+                    <img src="./images/slide_img01.png" alt="" />
+                  </figure>
+                  <div class="flex--c">
+                    <button type="button" class="heart-icon"></button>
+                    <div class="count">2</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="font24">※ 작품당 1인 1회 투표 가능(동일 작품 중복 투표 불가)</p>
+        </div>
+      </section>
+      <section class="sec2">
+        <div class="inner">
+          <picture class="sec2_ttl center">
+            <source media="(min-width: 601px)" srcset="./images/sec2_ttl.png" />
+            <source media="(max-width: 600px)" srcset="./images/sec2_ttl_mo.png" />
+            <img src="./images/sec2_ttl.png" alt="이벤트" />
+          </picture>
+          <div class="card card1">
+            <div class="obj">
+              <img src="./images/sec2_obj.png" alt="" />
+            </div>
+            <div class="ttl-wrap">
+              <div class="obj">
+                <img src="./images/event1.png" alt="" />
+              </div>
+              <picture class="ttl">
+                <source media="(min-width: 601px)" srcset="./images/sec2_card1_ttl.png" />
+                <source media="(max-width: 600px)" srcset="./images/sec2_card1_ttl_mo.png" />
+                <img src="./images/sec2_card1_ttl.png" alt="작품 투표 및 응원 댓글 (500명 추첨)" />
+              </picture>
+            </div>
+            <div class="flex-b mo-column">
+              <div class="left">
+                <p class="font28 fw-medium">
+                  마음에 든 작품에 ♡를 눌러 투표한 후<br />
+                  작품을 응원하는 마음을 담아 댓글을 남겨주세요.<br />
+                  추첨을 통해 500분께 스타벅스 기프티콘 증정!
+                </p>
+                <div class="img">
+                  <img src="./images/sec2_card1_img.png" alt="" class="only-pc" />
+                </div>
+              </div>
+                <picture class="gift">
+                  <source media="(min-width: 601px)" srcset="./images/sec2_card1_gift.png" />
+                  <source media="(max-width: 600px)" srcset="./images/sec2_card1_gift_mo.png" />
+                  <img src="./images/sec2_card1_gift.png" alt="경품 스타벅스 아이스 아메리카노(T)" />
+                </picture>
+            </div>
+            <div class="btn-wrap tac">
+              <button type="button" class="btn">응원 댓글 남기기</button>
+            </div>
+          </div>
+          <div class="card card2">
+            <div class="ttl-wrap">
+              <div class="obj">
+                <img src="./images/event2.png" alt="" />
+              </div>
+              <picture class="ttl">
+                <source media="(min-width: 601px)" srcset="./images/sec2_card2_ttl.png" />
+                <source media="(max-width: 600px)" srcset="./images/sec2_card2_ttl_mo.png" />
+                <img src="./images/sec2_card2_ttl.png" alt="SNS 소문내기 (30명 추첨)" />
+              </picture>
+            </div>
+
+            <p class="font28 fw-medium">
+              투표 이벤트 페이지 링크를 인스타그램 or 카카오톡으로<br />
+              공유 후 인증샷 또는 게시물 링크를 첨부하면 참여 완료!
+            </p>
+            <div class="gift">
+              <picture>
+                <source media="(min-width: 601px)" srcset="./images/sec2_card2_gift.png" />
+                <source media="(max-width: 600px)" srcset="./images/sec2_card2_gift_mo.png" />
+                <img src="./images/sec2_card2_gift.png" alt="경품 스마트폰 촬영 강연권" />
+              </picture>
+              <p class="font22">
+                강사 : 이승기(@creator.dami)<br />
+                (8월 23일 토 갤러리 가우디움)
+              </p>
+            </div>
+            <picture class="img">
+              <source media="(min-width: 601px)" srcset="./images/sec2_card2_img.png" />
+              <source media="(max-width: 600px)" srcset="./images/sec2_card2_img_mo.png" />
+              <img src="./images/sec2_card2_img.png" alt="" />
+            </picture>
+            <div class="history">
+              <h5 class="font20">강사 악력</h5>
+              <ul class="font18">
+                <li>• 디지털 크리에이터/인스타그램 22만 팔로워></li>
+                <li>• 2025 Meta festival korea 공식 패널 초청></li>
+                <li>• 2023, 2024, 2025 삼성전자 Galaxy Unpacked 공식 초청></li>
+                <li>• 2025 '드디어 우리 멋대로 살게 되었다' 대규모 크리에이터 강연></li>
+                <li>• 2024 제로베이스 <스마트폰 사진으로 월급 만들기> 클래스 런칭></li>
+                <li>• 2024 <내 인생을 빛내줄 스마트폰 사진> 책 출간</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec3">
+        <div class="obj obj1">
+          <img src="./images/sec3_obj1.png" alt="" />
+        </div>
+        <div class="obj obj2">
+          <img src="./images/sec3_obj2.png" alt="" />
+        </div>
+        <div class="obj obj3">
+          <img src="./images/sec3_obj3.png" alt="" />
+        </div>
+        <div class="inner">
+          <div class="card card1">
+            <picture class="ttl center">
+              <source media="(min-width: 601px)" srcset="./images/sec3_card1_ttl.png" />
+              <source media="(max-width: 600px)" srcset="./images/sec3_card1_ttl_mo.png" />
+              <img src="./images/sec3_card1_ttl.png" alt="응원댓글 작성하기" />
+            </picture>
+            <div class="form-box flex--c mo-column">
+              <div class="left flex--c mo-column">
+                <label for="">회원정보</label>
+                <p class="fc-black">김OO</p>
+              </div>
+              <div class="input-box flex--c mo-column">
+                <input type="text" placeholder="응원 댓글을 작성하세요!" />
+                <button type="button" type="button" class="btn">확인</button>
+              </div>
+            </div>
+            <picture class="ttl2 center">
+              <source media="(min-width: 601px)" srcset="./images/sec3_card1_ttl2.png" />
+              <source media="(max-width: 600px)" srcset="./images/sec3_card1_ttl2_mo.png" />
+              <img src="./images/sec3_card1_ttl2.png" alt="응원댓글" />
+            </picture>
+            <div class="note">
+              <ul>
+                <li>사진 정말 멋져요! 감성이 가득해서 한참 들여다보게 되네요. 응원합니다 :)</li>
+                <li>사진 보자마자 감탄했어요✨ 이렇게 멋진 시선으로 학교를 담아내시다니, 정말 대단하세요!</li>
+                <li>사진 정말 멋져요! 감성이 가득해서 한참 들여다보게 되네요. 응원합니다 :)</li>
+                <li>OO고등학교 선생님 응원합니다~~!</li>
+                <li>사진 정말 멋져요! 감성이 가득해서 한참 들여다보게 되네요. 응원합니다 :)</li>
+                <li>사진 보자마자 감탄했어요✨ 이렇게 멋진 시선으로 학교를 담아내시다니, 정말 대단하세요!</li>
+                <li>OO고등학교 선생님 응원합니다~~!</li>
+              </ul>
+            </div>
+
+            <div class="obj clip">
+              <img src="./images/clip1.png" alt="" />
+            </div>
+            <div class="obj obj4">
+              <img src="./images/sec3_obj4.png" alt="" />
+            </div>
+          </div>
+          <div class="card card2">
+            <div class="ttl-wrap flex-c-c mo-column">
+              <picture class="ttl">
+                <source media="(min-width: 601px)" srcset="./images/sec3_card2_ttl.png" />
+                <source media="(max-width: 600px)" srcset="./images/sec3_card2_ttl_mo.png" />
+                <img src="./images/sec3_card2_ttl.png" alt="SNS 소문내기" />
+              </picture>
+              <p class="font18">(인증샷 or 링크 첨부 택1)</p>
+            </div>
+            <ul class="flex-b-c">
+              <li class="form-box flex--c">
+                <label for="">인증링크</label>
+                <div class="input-box flex--c">
+                  <input type="text" placeholder="인증링크 입력" />
+                </div>
+              </li>
+              <li class="form-box file-upload flex--c">
+                <label for="">이미지 첨부</label>
+                <div class="input-box flex--c">
+                  <button type="button" id="fileBtn"></button>
+                  <span id="fileName">파일명.jpg</span>
+                  <input type="file" id="fileInput" style="display: none" />
+                </div>
+              </li>
+            </ul>
+            <div class="obj clip">
+              <img src="./images/clip2.png" alt="" />
+            </div>
+            <div class="btn-wrap tac">
+              <button type="button" class="btn">확인</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec4">
+        <div class="inner">
+          <picture class="ttl center">
+            <source media="(min-width: 601px)" srcset="./images/sec4_ttl.png" />
+            <source media="(max-width: 600px)" srcset="./images/sec4_ttl_mo.png" />
+            <img src="./images/sec4_ttl.png" alt="수상작 전시회 안내" />
+          </picture>
+          <p class="font28 tac">
+            YBM 사진 공모전에 선정된 30작을<br/> 온·오프라인에서 만나보세요!
+          </p>
+          <div class="card">
+            <div class="top">
+              <picture class="card_ttl center">
+                <source media="(min-width: 601px)" srcset="./images/sec4_card_ttl1.png" />
+                <source media="(max-width: 600px)" srcset="./images/sec4_card_ttl1_mo.png" />
+                <img src="./images/sec4_card_ttl1.png" alt="온라인" />
+              </picture>
+              <p class="font24">
+                8월 4일(월) Open<br/> Y클라우드 홈페이지 내
+              </p>
+            </div>
+            <div class="bottom">
+              <picture class="card_ttl center">
+                <source media="(min-width: 601px)" srcset="./images/sec4_card_ttl2.png" />
+                <source media="(max-width: 600px)" srcset="./images/sec4_card_ttl2_mo.png" />
+                <img src="./images/sec4_card_ttl2.png" alt="오프라인" />
+              </picture>
+              <p class="font24">
+                8월 20일(수) ~ 8월 24일(일)<br/> 갤러리 가우디움
+              </p>
+              <div class="map-box">
+                <img src="./images/map.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <p class="font40 text-white tac">
+                작품에 대한 <b> 응원</b> 및  <b> 투표 이벤트</b>를 소문 내주세요!
+              </p>
+      
+          <div class="share flex-c-c">
+            <picture class="share_txt">
+              <source media="(min-width: 601px)" srcset="./images/share_txt.png" />
+              <source media="(max-width: 600px)" srcset="./images/share_txt_mo.png" />
+              <img src="./images/share_txt.png" alt="공유하기" />
+            </picture>
+            <button type="button" class="share-btn"><img src="./images/icon_share.svg" alt="" /></button>
+            <button type="button" class="kakao-btn"><img src="./images/icon_kakao.svg" alt="" /></button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="inner">
+          <picture class="footer_ttl">
+            <source media="(min-width: 601px)" srcset="./images/footer_ttl.png" />
+            <source media="(max-width: 600px)" srcset="./images/footer_ttl_mo.png" />
+            <img src="./images/footer_ttl.png" alt="유의사항" />
+          </picture>
+          <ul>
+            <li>· 본 이벤트는 2025 YBM 콘텐츠 자문위원만 참여 가능합니다.</li>
+            <li>· Y클라우드 Y샘 광장의 공유자료실에 교육 자료 업로드 시 별도로 이벤트 참여 신청 절차 없이 자동 응모됩니다.</li>
+            <li>· 이벤트 참여 상품은 Y클라우드 회원 정보에 기재된 연락처로 발송됩니다. 연락처가 변경된 경우 1:1 문의를 이용 바랍니다.</li>
+            <li>· 개인정보를 업데이트하지 않았거나 상품권을 기간 내 사용하지 않아 문제가 발생할 경우, 상품 재발송은 불가능합니다.</li>
+            <li>· 문의하실 내용은 자문위원 Q&amp;A 게시판에 남겨주세요.</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <div class="popup" id="photo">
+      <div class="popup-inner">
+        <div class="pop-body">
+          <button type="button" class="close-btn" onclick="closePopup(this)"><img src="./images/" alt="" /></button>
+          <div class="popup-box">
+            <div class="img-box">
+              <img src="./images/pop_img.png" alt="" />
+            </div>
+            <div class="txt-box">
+              <h4>제목</h4>
+              <p>작품 설명입니다. 작품 설명입니다. 작품 설명입니다. 작품 설명입니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="alert">
+      <div class="popup-inner">
+        <div class="pop-body">
+          <div class="popup-box">
+            <p>투표가 완료되었습니다.</p>
+          </div>
+          <button class="btn btn-primary" type="button" onclick="closePopup(this)">확인</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
