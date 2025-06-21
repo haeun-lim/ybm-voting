@@ -4,11 +4,11 @@ html {
 /* tablet */
 @media screen and (max-width: 1024px) {
   html {
-    font-size: 0.13vw;
+    font-size: 0.08vw;
   }
 }
 /* mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   html {
        font-size: .27777778vw;
   }
@@ -149,7 +149,7 @@ h5{font-weight: 600;}
 @media screen and (max-width: 720px) {
   
 .font40 {
-  font-size:40rem;
+  font-size:24rem;
 }
 
 .font32 {
@@ -172,7 +172,7 @@ h5{font-weight: 600;}
   font-size:16rem;
 }
 .font18 {
-  font-size:16rem;
+  font-size:14rem;
 }
 
 }

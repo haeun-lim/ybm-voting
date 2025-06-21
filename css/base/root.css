@@ -41,6 +41,7 @@
   --bs-caption2: 16rem;
   --bs-fw-bold: 700;
   --bs-fw-medium: 500;
+  --swiper-navigation-size: 64rem;
 }
 
 @media screen and (max-width: 1024px) {

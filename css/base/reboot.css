@@ -194,7 +194,8 @@ q::before {
 
 b,
 strong {
-  font-weight: 600;
+  font-weight: 600; 
+  vertical-align: top;
 }
 
 mark {
