@@ -45,13 +45,15 @@ figure.center, picture.center{margin-left: auto; margin-right: auto;}
 .bot .ttl{width: 573rem; margin-bottom: 60rem;}
 .bot .font32{color: var(--bs-tc-clear); margin-bottom: 50rem;}
 .best-slide{margin: 0 auto 53rem; position: relative;}
-.best-slide .swiper{width: 1200rem; height: 570rem;}
-.best-slide .swiper .swiper-wrapper{column-gap: 25rem;}
-.best-slide .swiper-slide{ width: 220rem !important; height: calc(50% - 25rem) !important;}
+.best-slide .slide-inner{width: 1200rem; overflow: hidden; margin: 0 auto}
+.best-slide .swiper{width: 1225rem; height: 570rem; margin-left: -12.5rem;}
+/* .best-slide .swiper .swiper-wrapper{column-gap: 25rem;} */
+.best-slide .swiper-slide{ width: 245rem !important;  height: calc(50% - 25rem) !important; padding: 0 12.5rem;}
 .best-slide .swiper-slide:nth-child(even){margin-top: 50rem !important;}
-.best-slide .swiper-slide figure{width: 220rem; height: 220rem;  position: relative; overflow: hidden; border-radius: 12rem; }
-.best-slide .swiper-slide figure img{width: 100%; height: 100%; position: absolute; }
-
+.best-slide .swiper-slide a.img{display: block; width: 100%; padding-top: 100%;  position: relative; overflow: hidden; border-radius: 12rem; }
+.best-slide .swiper-slide a.img img{width: 100%; height: 100%; object-fit: contain; position: absolute; left: 0 ; top: 0; }
+.best-slide .swiper-slide a.img::after{  content: '';  position: absolute; top: 50%;  left: 50%;  width: 57rem; height: 57rem;  transform: translate(-50%, -50%); background: rgba(255, 255, 255, 0.8) url(../images/icon_plus.svg) no-repeat center  / 30rem; border-radius: 50%; opacity: 0; transition: all .6s;}
+.best-slide .swiper-slide a.img:hover::after{opacity: 1;}
 .best-slide .swiper-slide .flex--c{margin-top: 15rem;}
 .best-slide .swiper-slide .count{font-size: 26rem;  color: #232323; margin-left: 12rem; line-height: 1;}
 .swiper-button-next, .swiper-button-prev{width: 64rem; height: 64rem;}
@@ -119,6 +121,16 @@ figure.center, picture.center{margin-left: auto; margin-right: auto;}
 #fileBtn::after {  width: 28rem;  height: 2rem;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);}
 #fileName {  display: inline-block;  width: 288rem;  line-height: 60rem;  background: #ececec;  padding-left: 22rem;  color: #6e6e6e;}
 #submitBtn {  padding: 10px 40px;  background: #222;  color: #fff;  border: none;  cursor: pointer;}
+/* paging */
+.paging {  gap: 0 10rem;  margin-top: 30rem; }
+.paging a {  width: 40rem; font-size: 14rem; font-weight: 700; height: 40rem;  color: inherit;  border: 1px solid #d9d9d9;  border-radius: 4px;  display: -webkit-box;  display: -ms-flexbox;  display: flex;  -webkit-box-pack: center;      -ms-flex-pack: center;          justify-content: center;  -webkit-box-align: center;      -ms-flex-align: center;          align-items: center;}
+.paging a.active {  color: #fff;  border-color: #302c2b;  background: #302c2b;}
+.paging a.btn-page {  position: relative;}
+.paging a.page-btn {  position: relative;  width: 20rem;  height: 20rem;  display: block;  border: none;  display: block;  white-space: nowrap;  overflow: hidden;  text-indent: -999px;}
+.paging a.page-btn:after {  content: "";  position: absolute;  top: 0;  left: 0;  width: 18rem;  height: 18rem;  background: url(../images/paging-next.svg) no-repeat center center/contain;}
+.paging a.page-btn.prev:after {  -webkit-transform: rotate(180deg);          transform: rotate(180deg);}
+.paging a.page-btn.prev {  margin-right: 10rem;}.paging a.page-btn.next {  margin-left: 10rem;}
+.paging a.page-btn.disabled {  display: none;}
 
 /* sec4 */
 .sec4{ background: #f4703d url(../images/sec4_bg.png) no-repeat center / 100% auto;}
@@ -149,17 +161,18 @@ footer ul li {  font-size: 20rem;  line-height: 1.5; text-indent: -0.5em; paddin
 .popup {display: none;  position: fixed;  top: 0;  left: 0;  width: 100%;  height: 100vh;  z-index: 100;  background: rgba(0, 0, 0, 0.8);  color: #302c2b;  box-sizing: border-box;}
 .popup .popup-inner {position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  height: 606rem;  width: calc(100% - 40rem);  max-width: 464rem;  max-height: calc(100vh - 100rem);  background: #fff;  border-radius: 24rem;}
 /* 팝업 닫기 버튼 */
-.popup .close-btn{width: 30rem ; height: 30rem; position: absolute; top: 0; 
-  left: 50%; transform: translateX(-50%);  margin: 16rem auto ; display: block;}
+.popup .close-btn{width: 30rem ; height: 30rem; position: absolute; top: 20rem;   left: 50%; transform: translateX(-50%);   display: block;}
 .popup .close-btn::before{content: ''; width: 2rem ; height: 24rem; position:absolute; transform: translate(-50%, 0%) rotate(45deg); background-color: #5f5f5f;}
 .popup .close-btn::after{content: ''; width: 2rem ; height: 24rem; position:absolute; transform: translate(-50%, 0%) rotate(-45deg); background-color: #5f5f5f;}
 /* 팝업 바디 */
 .pop-body {width: 100%; height: 100%; padding: 70rem 10rem 30rem 30rem;  }
-.popup-box {height: 100%;  overflow-y: auto;  padding-right: 20rem;}
+.popup-box {height: 100%;  overflow-y: auto;  padding-right: 20rem; }
 .popup-box::-webkit-scrollbar {width: 4px;}
 .popup-box::-webkit-scrollbar-thumb {background: #c8c8c8;  border-radius: 2px;}
 .popup-box::-webkit-scrollbar-track {background: transparent;  border-radius: 2px;}
 
+/* 이미지 */
+.popup-box .img-box img{width: 100%;}
 /* 텍스트 */
 .popup .txt-box{margin-top: 20rem;}
 .popup .txt-box h4 {font-size: 20rem; }
@@ -171,10 +184,7 @@ footer ul li {  font-size: 20rem;  line-height: 1.5; text-indent: -0.5em; paddin
 #alert p {font-size: 22rem; font-weight: 600; text-align: center; }
 #alert .btn{width: 100%; font-size: 20rem;margin-top: 57rem;}
 
-@media screen and (max-width: 1200px) {
-  .best-slide .swiper{width: 955rem;}
-}
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
 .only-web{display:none !important;}
 .only-mob{display:block !important;}
 header { height: 60rem; padding: 0 10rem;}
@@ -201,13 +211,14 @@ section{ padding: 60rem 0;}
 .bot .font32{margin-bottom: 20rem;}
 /*slide*/
 .best-slide{margin: 0 auto 53rem; position: relative;}
-.best-slide .swiper{width: 100%; height: auto;}
-.best-slide .swiper .swiper-wrapper{column-gap: 16rem; row-gap: 24rem; flex-wrap: wrap;}
-.best-slide .swiper-slide{ width: 156rem !important; height: auto !important;}
+.best-slide .slide-inner{width: 100%;}
+.best-slide .swiper{width: 100%; height: auto; margin-left: 0;}
+.best-slide .swiper .swiper-wrapper{column-gap: 16rem; row-gap: 24rem; flex-wrap: wrap; flex-direction: row;}
+.best-slide .swiper-slide{ width: calc(50% - 8rem) !important; height: auto !important; padding: 0; transform: translateX(0);}
 .best-slide .swiper-slide:nth-child(even){margin-top: 0 !important;}
-.best-slide .swiper-slide figure{width: 156rem; height: 156rem;  }
 .best-slide .swiper-slide .flex--c{margin-top: 12rem;}
 .best-slide .swiper-slide .count{font-size: 20rem;margin-left: 9rem;}
+.best-slide .swiper-slide:nth-child(n + 11){display: none;}
 .swiper-button-next, .swiper-button-prev{display: none;}
 .heart-btn{width: 20rem; height: 18rem;}
 .bot .more-btn{display: flex}
@@ -244,7 +255,7 @@ section{ padding: 60rem 0;}
 /*sec3 card1*/
 .sec3 .card1{ background-image: url(../images/sec3_card_bg_mo.png)}
 .sec3 .card1 > .obj4{display: none;}
-.sec3 .card1 .note{padding: 10rem 9rem 60rem;}
+.sec3 .card1 .note{padding: 10rem 9rem 30rem;}
 .sec3 .card1 .note ul li{font-size: 14rem; padding: 14rem 15rem; }
 .sec3 .card1 .ttl{width: 176rem; margin-bottom: 24rem;}
 .sec3 .card1 .form-box{margin-bottom: 30rem;}
@@ -266,6 +277,11 @@ section{ padding: 60rem 0;}
 #fileBtn::after {  width: 10rem;}
 #fileName {  width: calc(100% - 54rem);  line-height: 46rem; padding-left: 16rem;}
 #submitBtn {  padding: 10px 40px;  background: #222;  color: #fff;  border: none;  cursor: pointer;}
+/* paging */
+.paging {  gap: 0 6rem;   }
+.paging a {  width: 34rem; height: 34rem;  color: inherit;;}
+.paging a.page-btn.prev {  margin-right: 4rem;}
+.paging a.page-btn.next {  margin-left: 4rem;}
 
 /* sec4 */
 .sec4{padding-top: 80rem; background-image: url(../images/sec4_bg_mo.png)}
@@ -288,24 +304,11 @@ section{ padding: 60rem 0;}
 footer {  padding: 60rem 0;}
 .footer_ttl{width: 87rem; margin-bottom: 10rem;}
 footer ul li {  font-size: 16rem;  }
-/* 팝업 공통 설정 */
-.popup {display: none;  position: fixed;  top: 0;  left: 0;  width: 100%;  height: 100vh;  z-index: 100;  background: rgba(0, 0, 0, 0.8);  color: #302c2b;  box-sizing: border-box;}
-.popup .popup-inner {position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  height: 606rem;  width: calc(100% - 40rem);  max-width: 464rem;  max-height: calc(100vh - 100rem);  background: #fff;  border-radius: 24rem;}
-/* 팝업 닫기 버튼 */
-.popup .close-btn{width: 30rem ; height: 30rem; position: absolute; top: 0; 
-  left: 50%; transform: translateX(-50%);  margin: 16rem auto ; display: block;}
-.popup .close-btn::before{content: ''; width: 2rem ; height: 24rem; position:absolute; transform: translate(-50%, 0%) rotate(45deg); background-color: #5f5f5f;}
-.popup .close-btn::after{content: ''; width: 2rem ; height: 24rem; position:absolute; transform: translate(-50%, 0%) rotate(-45deg); background-color: #5f5f5f;}
-/* 팝업 바디 */
-.pop-body {width: 100%; height: 100%; padding: 70rem 10rem 30rem 30rem;  }
-.popup-box {height: 100%;  overflow-y: auto;  padding-right: 20rem;}
 
-/* 텍스트 */
-.popup .txt-box{margin-top: 20rem;}
-.popup .txt-box h4 {font-size: 20rem; }
-.popup .txt-box p {line-height: 1.375; font-size: 16rem; margin-top: 10rem;}
+/* popup */
+.pop-body {padding: 60rem 10rem 30rem 30rem;}
+.popup .close-btn{top: 15rem;}
 /* alert  */
-#alert .popup-box {padding-right: 0;}
 #alert .pop-body {padding: 60rem 30rem 30rem;}
 #alert p {font-size: 16rem; }
 #alert .btn{font-size: 16rem;margin-top: 40rem;}

@@ -3,14 +3,17 @@ html {
 }
 /* tablet */
 @media screen and (max-width: 1024px) {
+  /* html {
+  font-size: 0.13vw;
+  }  */
   html {
-    font-size: 0.08vw;
+    font-size: .27777778vw;
   }
 }
 /* mobile */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
   html {
-       font-size: .27777778vw;
+    font-size: .27777778vw;
   }
 }
 h2,
@@ -20,68 +23,7 @@ h4 {
   font-weight: 700;
 }
 h5{font-weight: 600;}
-/* 
-.headline1 {
-  font-size: var(--bs-headline1);
-  line-height: 1.1;
-  font-family: var(--bs-font-gmarket);
-  font-weight: 700;
-  text-align: center;
-}
-.headline2 {
-  font-size: var(--bs-headline2);
-  line-height: 1.275;
-  font-family: var(--bs-font-gmarket);
-  font-weight: 700;
-  text-align: center;
-}
-.headline3 {
-  font-size: var(--bs-headline3);
-  line-height: 1.275;
-  font-family: var(--bs-font-gmarket);
-  font-weight: 700;
-  text-align: center;
-}
 
-.title1 {
-  font-size: var(--bs-title1);
-  line-height: 1.2;
-  font-family: var(--bs-font-gmarket);
-  font-weight: 700;
-  text-align: center;
-}
-.title2 {
-  font-size: var(--bs-title2);
-  line-height: 1.3;
-  font-weight: 700;
-  text-align: center;
-}
-.title3 {
-  font-size: var(--bs-title3);
-  line-height: 1.2;
-  font-weight: 700;
-}
-.title4 {
-  font-size: var(--bs-title4);
-  line-height: 1.4;
-}
-.body1 {
-  font-size: var(--bs-body1);
-  font-family: var(--bs-font-gmarket);
-}
-.body2 {
-  font-size: var(--bs-body2);
-}
-.body3 {
-  font-size: var(--bs-body3);
-  line-height: 1.6;
-}
-.caption1 {
-  font-size: var(--bs-caption1);
-}
-.caption2 {
-  font-size: var(--bs-caption2);
-} */
 .fw-bold {
   font-weight: 700;
 }
@@ -116,7 +58,7 @@ h5{font-weight: 600;}
 .font18 {
   font-size:18rem;
 }
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   
 .font40 {
   font-size:40rem;
@@ -143,10 +85,10 @@ h5{font-weight: 600;}
 
 .font18 {
   font-size:18rem;
-}
+} 
 
-}
-@media screen and (max-width: 720px) {
+}*/
+@media screen and (max-width: 1024px) {
   
 .font40 {
   font-size:24rem;
